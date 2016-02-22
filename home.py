@@ -27,10 +27,10 @@ def teams():
 @app.route('/teams/<team_name>/')
 def team_name(team_name):
 	tweet_ids = sort_tweets(team_name)
+	#tweet_ids = [701584940459286528]
 	return render_template('team_name.html', team_name = team_name, tweet_ids = tweet_ids)
 	
 
 if __name__ == '__main__':
 	app.debug = True
-	app.run(host='0.0.0.0')
 	#app.run()

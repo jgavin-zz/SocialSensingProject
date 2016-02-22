@@ -1,9 +1,10 @@
+import os
+from settings import APP_TWEETS
+
 def sort_tweets(team_name):
-	filename = "tweets/" + team_name.lower() + "_tweets.txt"
-	file = open(filename, 'r')
-	
+	tweetfile = open(os.path.join(APP_TWEETS, team_name.lower() + '_tweets.txt'), 'r')
 	tweets = []
-	for line in file:
+	for line in tweetfile:
 		line_split = line.split(',')
 		id = line_split[0]
 		distance = line_split[1]
@@ -18,7 +19,7 @@ def sort_tweets(team_name):
 		tweet = tweets[count]
 		
 		ids.append(tweet['id'])
-		print tweet['distance']
 		count = count + 1
 		
+	tweetfile.close()
 	return ids
