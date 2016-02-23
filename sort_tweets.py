@@ -6,8 +6,12 @@ if __name__ == '__main__':
                               host='127.0.0.1',
                               database='socialsensing')
 	cursor = cnx.cursor()
+	
 	teams = ['bulls', 'celtics', 'lakers', 'knicks', 'warriors']
 	for team_name in teams:
+		query = ("DELETE FROM " + team_name.lower() + "_top;")
+		cursor.execute(query)
+
 		tweets = []
 		query = ('select id, distance from ' + team_name.lower() + '_tweets;')
 		cursor.execute(query)
@@ -27,6 +31,6 @@ if __name__ == '__main__':
 	cnx.commit()
         cnx.close()
 
-	logfile = open("/var/www/SocialSensingProject/log.txt", 'w')
+	logfile = open("/var/www/SocialSensingProject/log.txt", 'a')
 	logfile.write("Sorted tweets at " + str(datetime.datetime.now())+ '\n')
 	logfile.close()
