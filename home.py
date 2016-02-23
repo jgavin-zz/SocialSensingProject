@@ -33,4 +33,4 @@ def team_name(team_name):
 
 if __name__ == '__main__':
 	app.debug = True
-	#app.run()
+	app.run()

@@ -44,8 +44,7 @@ class TweetListener(StreamListener):
 		lakers_distance = compute_jaccard_distance(status, lakers_words)
 		knicks_distance = compute_jaccard_distance(status, knicks_words)
 		celtics_distance = compute_jaccard_distance(status, celtics_words)
-		warriors_distance = compute_jaccard_distance(status, warriors_words)
-		
+		warriors_distance = compute_jaccard_distance(status, warriors_words)		
 		min_distance = min(bulls_distance, lakers_distance, knicks_distance, celtics_distance, warriors_distance)
 		if min_distance < 1:
 			if min_distance == bulls_distance:

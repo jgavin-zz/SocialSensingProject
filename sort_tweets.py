@@ -13,7 +13,6 @@ def sort_tweets(team_name):
 	for (id, distance) in cursor:
 		tweet = {'id': str(id), 'distance': float(distance)}
 		tweets.append(tweet)
-	cnx.close()
 	tweets.sort(key=lambda x: x['distance'], reverse=False)
 	
 	count = 0	
@@ -22,5 +21,7 @@ def sort_tweets(team_name):
 		tweet = tweets[count]
 		ids.append(tweet['id'])
 		count = count + 1
-		
-	return ids
+		query = ("INSERT INTO " + team_name.lower() + "_top VALUES (" + str(tweet['id'])+ ");")
+		cursor.execute(query)
+	cnx.commit()
+        cnx.close()
