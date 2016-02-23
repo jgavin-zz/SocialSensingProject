@@ -11,4 +11,4 @@ from sort_tweets import sort_tweets
 #cnx.close()
 
 
-sort_tweets('bulls')
+sort_tweets('warriors')

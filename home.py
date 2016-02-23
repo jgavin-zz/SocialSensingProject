@@ -4,7 +4,11 @@ from flask import render_template
 from flask.ext.twitter_oembedder import TwitterOEmbedder
 import tweepy
 from tweepy import OAuthHandler
-from sort_tweets import sort_tweets	
+from fetch_top_tweets import fetch_top_tweets	
+import requests
+from requests.packages.urllib3.exceptions import InsecureRequestWarning
+
+requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 
 app = Flask(__name__)
 cache = Cache(app, config={'CACHE_TYPE': 'simple'})
@@ -27,10 +31,11 @@ def home():
     
 @app.route('/teams/<team_name>/')
 def team_name(team_name):
-	tweet_ids = sort_tweets(team_name)
+	tweet_ids = fetch_top_tweets(team_name)
+	tweet_ids = ['702208238834597891']
 	return render_template('team_name.html', team_name = team_name, tweet_ids = tweet_ids)
 	
 
 if __name__ == '__main__':
 	app.debug = True
-	app.run()
+	#app.run()
