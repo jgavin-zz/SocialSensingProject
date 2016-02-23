@@ -3,6 +3,7 @@ import json
 from tweepy.streaming import StreamListener
 from tweepy import OAuthHandler
 from tweepy import Stream
+import mysql.connector
 
 def compute_jaccard_distance(status, centroid):
 
@@ -35,6 +36,10 @@ def compute_jaccard_distance(status, centroid):
 class TweetListener(StreamListener):
 		
 	def on_status(self, status):
+		cnx = mysql.connector.connect(user='root', password='bob',
+                              host='127.0.0.1',
+                              database='socialsensing')
+		cursor = cnx.cursor()
 		bulls_distance = compute_jaccard_distance(status, bulls_words)
 		lakers_distance = compute_jaccard_distance(status, lakers_words)
 		knicks_distance = compute_jaccard_distance(status, knicks_words)
@@ -44,21 +49,28 @@ class TweetListener(StreamListener):
 		min_distance = min(bulls_distance, lakers_distance, knicks_distance, celtics_distance, warriors_distance)
 		if min_distance < 1:
 			if min_distance == bulls_distance:
-				with open("tweets/bulls_tweets.txt", "a") as myfile:
-					myfile.write(str(status.id) + ',' + str(min_distance) + '\n')
+				#with open("tweets/bulls_tweets.txt", "a") as myfile:
+				#	myfile.write(str(status.id) + ',' + str(min_distance) + '\n')
+				query = ("INSERT INTO bulls_tweets VALUES (" + str(status.id) + "," + str(min_distance) + ",CURRENT_TIMESTAMP);")
 			elif min_distance == lakers_distance:
-				with open("tweets/lakers_tweets.txt", "a") as myfile:
-					myfile.write(str(status.id) + ',' + str(min_distance) + '\n')
+				#with open("tweets/lakers_tweets.txt", "a") as myfile:
+				#	myfile.write(str(status.id) + ',' + str(min_distance) + '\n')
+				query = ("INSERT INTO lakers_tweets VALUES (" + str(status.id) + "," + str(min_distance) + ",CURRENT_TIMESTAMP);")
 			elif min_distance == knicks_distance:
-				with open("tweets/knicks_tweets.txt", "a") as myfile:
-					myfile.write(str(status.id) + ',' + str(min_distance) + '\n')
+				#with open("tweets/knicks_tweets.txt", "a") as myfile:
+				#	myfile.write(str(status.id) + ',' + str(min_distance) + '\n')
+				query = ("INSERT INTO knicks_tweets VALUES (" + str(status.id) + "," + str(min_distance) + ",CURRENT_TIMESTAMP);")
 			elif min_distance == celtics_distance:
-				with open("tweets/celtics_tweets.txt", "a") as myfile:
-					myfile.write(str(status.id) + ',' + str(min_distance) + '\n')
+				#with open("tweets/celtics_tweets.txt", "a") as myfile:
+				#	myfile.write(str(status.id) + ',' + str(min_distance) + '\n')
+				query = ("INSERT INTO celtics_tweets VALUES (" + str(status.id) + "," + str(min_distance) + ",CURRENT_TIMESTAMP);")
 			else:
-				with open("tweets/warriors_tweets.txt", "a") as myfile:
-					myfile.write(str(status.id) + ',' + str(min_distance) + '\n')
-				
+				#with open("tweets/warriors_tweets.txt", "a") as myfile:
+				#	myfile.write(str(status.id) + ',' + str(min_distance) + '\n')
+				query = ("INSERT INTO warriors_tweets VALUES (" + str(status.id) + "," + str(min_distance) + ",CURRENT_TIMESTAMP);")
+			cursor.execute(query)
+		cnx.commit()
+                cnx.close()
 	def on_error(self, status):
 		print(status)
 		            
