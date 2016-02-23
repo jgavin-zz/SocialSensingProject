@@ -1,0 +1,17 @@
+.nav_table {
+    width: 100%;
+    table-layout: fixed;
+    padding-left: 0px;
+    padding-right: 0px;
+    border: "1";
+}
+
+.nav_row {	
+	height: 87px;
+}
+
+.nav_cell {
+	background-color: #D8D8D8;
+    text-align: center;
+}​
+

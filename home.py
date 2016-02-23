@@ -15,19 +15,19 @@ app.config['TWITTER_ACCESS_TOKEN'] = '635902588-6BuJRUYxXQ63vfmQYcP7auLAjkTgxaCR
 app.config['TWITTER_TOKEN_SECRET'] = 'YsLyHMKLoUl47cCge1sBb7KfjDhg2wBbjWhBWm4VVOXtd'
 
 @app.route('/')
-def home():
-    return 'Here is the home page!'
-    
-    
 @app.route('/teams/')
-def teams():
-    return 'Here is the teams page!'
+def home():
+    return render_template('home.html')
+    
+    
+#@app.route('/teams/')
+#def teams():
+#    return 'Here is the teams page!'
     
     
 @app.route('/teams/<team_name>/')
 def team_name(team_name):
 	tweet_ids = sort_tweets(team_name)
-	#tweet_ids = [701584940459286528]
 	return render_template('team_name.html', team_name = team_name, tweet_ids = tweet_ids)
 	
 
