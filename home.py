@@ -32,7 +32,6 @@ def home():
 @app.route('/teams/<team_name>/')
 def team_name(team_name):
 	tweet_ids = fetch_top_tweets(team_name)
-	tweet_ids = ['702208238834597891']
 	return render_template('team_name.html', team_name = team_name, tweet_ids = tweet_ids)
 	
 

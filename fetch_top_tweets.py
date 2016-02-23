@@ -9,5 +9,5 @@ def fetch_top_tweets(team_name):
 	query = ('select id from ' + team_name.lower() + '_top;')
 	cursor.execute(query)
 	for (id) in cursor:
-		ids.append(int(id))
+		ids.append(int(''.join(id)))
 	return ids	
