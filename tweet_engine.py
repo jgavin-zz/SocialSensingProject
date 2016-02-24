@@ -11,11 +11,12 @@ def compute_jaccard_distance(status, centroid):
 	tweet_split = status.text.split(' ')
 	for word in tweet_split:
 		tweet_words.append(word)
-	
+	len1 = len(tweet_words)	
 	centroid_words = []
 	for word in centroid:
 		centroid_words.append(word)
-	
+	len2 = len(centroid_words)
+
 	intersection = 0
 	words_removed = 1
 	
@@ -30,7 +31,7 @@ def compute_jaccard_distance(status, centroid):
 					centroid_words.remove(centroid_word)				
 					break
 					
-	union = len(tweet_words) + len(centroid) - intersection
+	union = len1 + len2 - intersection
 	return 1 - float(intersection)/float(union)
 
 class TweetListener(StreamListener):
@@ -38,8 +39,12 @@ class TweetListener(StreamListener):
 	def on_status(self, status):
 		cnx = mysql.connector.connect(user='root', password='bob',
                               host='127.0.0.1',
-                              database='socialsensing')
+                              database='socialsensing',
+                              charset='utf8',
+                              use_unicode=True)
 		cursor = cnx.cursor()
+		status.text = status.text.replace("'", '')
+                status.text = status.text.replace('"', "")
 		bulls_distance = compute_jaccard_distance(status, bulls_words)
 		lakers_distance = compute_jaccard_distance(status, lakers_words)
 		knicks_distance = compute_jaccard_distance(status, knicks_words)
@@ -50,23 +55,23 @@ class TweetListener(StreamListener):
 			if min_distance == bulls_distance:
 				#with open("tweets/bulls_tweets.txt", "a") as myfile:
 				#	myfile.write(str(status.id) + ',' + str(min_distance) + '\n')
-				query = ("INSERT INTO bulls_tweets VALUES (" + str(status.id) + "," + str(min_distance) + ",CURRENT_TIMESTAMP);")
+				query = ("INSERT INTO bulls_tweets VALUES (" + str(status.id) + ',"' + status.text + '",' + str(min_distance) + ",CURRENT_TIMESTAMP);")
 			elif min_distance == lakers_distance:
 				#with open("tweets/lakers_tweets.txt", "a") as myfile:
 				#	myfile.write(str(status.id) + ',' + str(min_distance) + '\n')
-				query = ("INSERT INTO lakers_tweets VALUES (" + str(status.id) + "," + str(min_distance) + ",CURRENT_TIMESTAMP);")
+				query = ("INSERT INTO lakers_tweets VALUES (" + str(status.id) + ',"' + status.text + '",' + str(min_distance) + ",CURRENT_TIMESTAMP);")
 			elif min_distance == knicks_distance:
 				#with open("tweets/knicks_tweets.txt", "a") as myfile:
 				#	myfile.write(str(status.id) + ',' + str(min_distance) + '\n')
-				query = ("INSERT INTO knicks_tweets VALUES (" + str(status.id) + "," + str(min_distance) + ",CURRENT_TIMESTAMP);")
+				query = ("INSERT INTO knicks_tweets VALUES (" + str(status.id) + ',"' + status.text + '",' + str(min_distance) + ",CURRENT_TIMESTAMP);")
 			elif min_distance == celtics_distance:
 				#with open("tweets/celtics_tweets.txt", "a") as myfile:
 				#	myfile.write(str(status.id) + ',' + str(min_distance) + '\n')
-				query = ("INSERT INTO celtics_tweets VALUES (" + str(status.id) + "," + str(min_distance) + ",CURRENT_TIMESTAMP);")
+				query = ("INSERT INTO celtics_tweets VALUES (" + str(status.id) + ',"' + status.text + '",' + str(min_distance) + ",CURRENT_TIMESTAMP);")
 			else:
 				#with open("tweets/warriors_tweets.txt", "a") as myfile:
 				#	myfile.write(str(status.id) + ',' + str(min_distance) + '\n')
-				query = ("INSERT INTO warriors_tweets VALUES (" + str(status.id) + "," + str(min_distance) + ",CURRENT_TIMESTAMP);")
+				query = ("INSERT INTO warriors_tweets VALUES (" + str(status.id) + ',"' + status.text + '",' + str(min_distance) + ",CURRENT_TIMESTAMP);")
 			cursor.execute(query)
 		cnx.commit()
                 cnx.close()

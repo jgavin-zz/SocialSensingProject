@@ -4,7 +4,9 @@ import datetime
 if __name__ == '__main__':
 	cnx = mysql.connector.connect(user='root', password='bob',
                               host='127.0.0.1',
-                              database='socialsensing')
+                              database='socialsensing',
+                              charset='utf8',
+                              use_unicode=True)
 	cursor = cnx.cursor()	
 	teams = ['bulls', 'celtics', 'knicks', 'lakers', 'warriors']
 	for team_name in teams:
