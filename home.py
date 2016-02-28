@@ -6,11 +6,9 @@ import tweepy
 from tweepy import OAuthHandler
 from fetch_top_tweets import fetch_top_tweets	
 import requests
-from requests.packages.urllib3.exceptions import InsecureRequestWarning
-
-requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 
 app = Flask(__name__)
+
 cache = Cache(app, config={'CACHE_TYPE': 'simple'})
 twitter_oembedder = TwitterOEmbedder(app,cache,debug=True)
 app.config['TWITTER_CONSUMER_KEY'] = 'FrTtImImzPxthrIjkTFrsUatY'
@@ -35,6 +33,6 @@ def team_name(team_name):
 	return render_template('team_name.html', team_name = team_name, tweet_ids = tweet_ids)
 	
 
-if __name__ == '__main__':
-	app.debug = True
+#if __name__ == '__main__':
+#	app.debug = True
 	#app.run()
