@@ -4,6 +4,7 @@ from tweepy.streaming import StreamListener
 from tweepy import OAuthHandler
 from tweepy import Stream
 import mysql.connector
+from compute_score import compute_score
 
 def compute_jaccard_distance(status, centroid):
 
@@ -46,11 +47,12 @@ class TweetListener(StreamListener):
 		status.text = status.text.replace("'", '')
                 status.text = status.text.replace('"', "")
 
-		retweets = status.retweet_count
-		likes = status.favorite_count
-		username = status.user
-		tweet_time = status.created_at
-		print tweet_time
+		retweets = str(status.retweet_count)
+		likes = str(status.favorite_count)
+		username = str(status.user.screen_name)
+		tweet_time = status.created_at.strftime("%Y-%m-%d %I:%M")
+		
+		#print tweet_time
 		
 		bulls_distance = compute_jaccard_distance(status, bulls_words)
 		lakers_distance = compute_jaccard_distance(status, lakers_words)
@@ -59,22 +61,23 @@ class TweetListener(StreamListener):
 		warriors_distance = compute_jaccard_distance(status, warriors_words)		
 		min_distance = min(bulls_distance, lakers_distance, knicks_distance, celtics_distance, warriors_distance)
 
+		score = str(compute_score(min_distance, retweets, likes, tweet_time, username))
+
 		if min_distance < .985:
 			if min_distance == bulls_distance:
-				team_name = bulls
+				team_name = 'bulls'
 			elif min_distance == lakers_distance:
-				team_name = lakers
+				team_name = 'lakers'
 			elif min_distance == knicks_distance:
-				team_name = knicks
+				team_name = 'knicks'
 			elif min_distance == celtics_distance:
-				team_name = celtics
+				team_name = 'celtics'
 			else:
-				team_name = warriors
-			query = ("INSERT INTO " + team_name + "_tweets VALUES (" + str(status.id) + ',"' + status.text + '",' + str(min_distance) + ",CURRENT_TIMESTAMP, STR_TO_DATE(" + tweet_time + ", '%Y-%m-%d %h:%i:%s'" + "), " + retweets + ", " + likes + ", '" + username + "', " + 0 + " );")
-			print query
+				team_name = 'warriors'
+			query = ("INSERT INTO " + team_name + "_tweets VALUES (" + str(status.id) + ',"' + status.text + '",' + str(min_distance) + ",CURRENT_TIMESTAMP, STR_TO_DATE('" + tweet_time + "', '%Y-%m-%d %h:%i'" + "), " + retweets + ", " + likes + ", '" + username + "', " + score + " );")
 			cursor.execute(query)
 		cnx.commit()
-        cnx.close()
+        	cnx.close()
 	def on_error(self, status):
 		print(status)
 		            

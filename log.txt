@@ -1387,3 +1387,33 @@ Deleted tweets at 2016-03-01 18:00:03.543606
 Sorted tweets at 2016-03-01 18:00:09.698642
 Sorted tweets at 2016-03-01 18:05:11.070710
 Sorted tweets at 2016-03-01 18:10:11.754684
+Deleted duplicate tweets at 2016-03-01 19:45:01.537615. It took 0 seconds.
+Sorted tweets at 2016-03-01 19:50:01.689833
+Deleted duplicate tweets at 2016-03-01 19:50:15.198740. It took 13 seconds.
+Sorted tweets at 2016-03-01 19:55:01.377954
+Deleted duplicate tweets at 2016-03-01 19:55:39.603563. It took 38 seconds.
+Sorted tweets at 2016-03-01 20:00:01.858121
+There were (86,) tweets in the bulls tweets table at 2016-03-01 20:00:36.955473.There were (2269,) tweets in the celtics tweets table at 2016-03-01 20:00:36.956209.There were (268,) tweets in the knicks tweets table at 2016-03-01 20:00:36.956472.There were (617,) tweets in the lakers tweets table at 2016-03-01 20:00:36.956837.There were (417,) tweets in the warriors tweets table at 2016-03-01 20:00:36.957113.Deleted duplicate tweets at 2016-03-01 20:01:17.731258. It took 75 seconds.
+There were 91 tweets in the bulls tweets table at 2016-03-01 20:01:29.303957.
+There were 2253 tweets in the celtics tweets table at 2016-03-01 20:01:29.304698.
+There were 274 tweets in the knicks tweets table at 2016-03-01 20:01:29.304955.
+There were 618 tweets in the lakers tweets table at 2016-03-01 20:01:29.305287.
+There were 416 tweets in the warriors tweets table at 2016-03-01 20:01:29.305580.
+There were 92 tweets in the bulls tweets table at 2016-03-01 20:02:10.875110.
+There were 2342 tweets in the celtics tweets table at 2016-03-01 20:02:10.875862.
+There were 278 tweets in the knicks tweets table at 2016-03-01 20:02:10.876122.
+There were 642 tweets in the lakers tweets table at 2016-03-01 20:02:10.876460.
+There were 434 tweets in the warriors tweets table at 2016-03-01 20:02:10.876747.
+There were 103 tweets in the bulls tweets table at 2016-03-01 20:05:01.873929.
+There were 2771 tweets in the celtics tweets table at 2016-03-01 20:05:01.875442.
+There were 312 tweets in the knicks tweets table at 2016-03-01 20:05:01.900146.
+There were 756 tweets in the lakers tweets table at 2016-03-01 20:05:01.900632.
+There were 507 tweets in the warriors tweets table at 2016-03-01 20:05:01.900952.
+Sorted tweets at 2016-03-01 20:05:02.055862
+Deleted duplicate tweets at 2016-03-01 20:07:06.282474. It took 124 seconds.
+There were 138 tweets in the bulls tweets table at 2016-03-01 20:10:01.413342.
+There were 3484 tweets in the celtics tweets table at 2016-03-01 20:10:01.416052.
+There were 400 tweets in the knicks tweets table at 2016-03-01 20:10:01.417016.
+There were 984 tweets in the lakers tweets table at 2016-03-01 20:10:01.418552.
+There were 658 tweets in the warriors tweets table at 2016-03-01 20:10:01.419325.
+Sorted tweets at 2016-03-01 20:10:01.588538
