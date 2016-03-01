@@ -67,7 +67,12 @@ createTableQuery = ('''CREATE TABLE bulls_tweets (
 						id VARCHAR(20) NOT NULL,
 						text VARCHAR(200) NOT NULL,
 						distance double NOT NULL,
-						date timestamp)'''
+						date_inserted timestamp,
+						date_tweeted timestamp,
+						retweets INT,
+						likes INT,
+						username VARCHAR(100),
+                                                score DOUBLE)'''
                     )
 cursor.execute(createTableQuery)
 
@@ -76,7 +81,12 @@ createTableQuery = ('''CREATE TABLE celtics_tweets (
                                                 id VARCHAR(20) NOT NULL,
                                                 text VARCHAR(200) NOT NULL,
                                                 distance double NOT NULL,
-                                                date timestamp)'''
+                                                date_inserted timestamp,
+                                                date_tweeted timestamp,
+                                                retweets INT,
+                                                likes INT,
+                                                username VARCHAR(100),
+                                                score DOUBLE)'''
                     )
 cursor.execute(createTableQuery)
 
@@ -85,7 +95,12 @@ createTableQuery = ('''CREATE TABLE lakers_tweets (
                                                 id VARCHAR(20) NOT NULL,
                                                 text VARCHAR(200) NOT NULL,
                                                 distance double NOT NULL,
-                                                date timestamp)'''
+                                                date_inserted timestamp,
+                                                date_tweeted timestamp,
+                                                retweets INT,
+                                                likes INT,
+                                                username VARCHAR(100),
+                                                score DOUBLE)'''
                     )
 cursor.execute(createTableQuery)
 
@@ -94,7 +109,12 @@ createTableQuery = ('''CREATE TABLE knicks_tweets (
                                                 id VARCHAR(20) NOT NULL,
                                                 text VARCHAR(200) NOT NULL,
                                                 distance double NOT NULL,
-                                                date timestamp)'''
+                                               	date_inserted timestamp,
+                                                date_tweeted timestamp,
+                                                retweets INT,
+                                                likes INT,
+                                                username VARCHAR(100),
+                                                score DOUBLE)'''
                     )
 cursor.execute(createTableQuery)
 
@@ -103,7 +123,12 @@ createTableQuery = ('''CREATE TABLE warriors_tweets (
                                                 id VARCHAR(20) NOT NULL,
                                                 text VARCHAR(200) NOT NULL,
                                                 distance double NOT NULL,
-                                                date timestamp)'''
+                                                date_inserted timestamp,
+                                                date_tweeted timestamp,
+                                                retweets INT,
+                                                likes INT,
+                                                username VARCHAR(100),
+						score DOUBLE)'''
                     )
 cursor.execute(createTableQuery)
 

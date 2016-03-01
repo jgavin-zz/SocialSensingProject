@@ -5,7 +5,28 @@ class Cluster:
 	def __init__(self, c):
 		self.centroid = c
 		self.tweets = [c]
-def compute__distance(status1, status2):
+
+def compute_centroid(cluster):
+
+	min_average_distance = 1
+	new_centroid = cluster.tweets[0]
+	cluster_tweets = cluster.tweets
+		
+	for tweet in cluster.tweets:
+		total_distance = 0
+			
+		for compare_tweet in cluster_tweets:
+			distance = compute_distance(tweet['text'], compare_tweet['text'])
+			total_distance = total_distance + distance
+				
+		average_distance = float(total_distance)/float(len(cluster.tweets))
+			
+		if average_distance < min_average_distance:
+			min_average_distance = average_distance
+			cluster.centroid = tweet
+
+
+def compute_distance(status1, status2):
 
 	tweet1_words = []
 	tweet1_split = status1.split(' ')
@@ -41,8 +62,10 @@ def compute_clusters(tweets):
 	clusters = []
 	firstCluster = Cluster(tweets[0])
 	clusters.append(firstCluster)
+	diameter = .3
 	
 	for i in range(len(tweets)):
+		
 		if i == 0:
 			continue;
 		min_distance = 1
@@ -54,16 +77,20 @@ def compute_clusters(tweets):
 				min_distance = distance
 				closest_cluster = cluster
 		
-		if min_distance < .1:
+		if min_distance < diameter:
 			closest_cluster.tweets.append(tweet)
+			compute_centroid(closest_cluster)
 		else:
 			newCluster = Cluster(tweet)
 			clusters.append(newCluster)
 
-	for cluster in clusters:
-		for tweet in cluster.tweets:
-			print tweet['text']
-		print "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+
+	#for cluster in clusters:
+	#	for tweet in cluster.tweets:
+	#		print tweet['text']
+	#	print "XXXXXXXXXXXXXXXXXXXXXXXXXX"
+	
+	return clusters
 		
 				
 	
