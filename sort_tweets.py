@@ -15,12 +15,12 @@ if __name__ == '__main__':
 		cursor.execute(query)
 
 		tweets = []
-		query = ('select id, distance from ' + team_name.lower() + '_tweets;')
+		query = ('select id, score from ' + team_name.lower() + '_tweets;')
 		cursor.execute(query)
-		for (id, distance) in cursor:
-			tweet = {'id': str(id), 'distance': float(distance)}
+		for (id, score) in cursor:
+			tweet = {'id': str(id), 'score': float(score)}
 			tweets.append(tweet)
-		tweets.sort(key=lambda x: x['distance'], reverse=False)
+		tweets.sort(key=lambda x: x['score'], reverse=False)
 	
 		count = 0	
 		ids = []
