@@ -5,6 +5,7 @@ from tweepy import OAuthHandler
 from tweepy import Stream
 import mysql.connector
 from compute_score import compute_score
+import datetime
 
 def compute_jaccard_distance(status, centroid):
 
@@ -51,7 +52,7 @@ class TweetListener(StreamListener):
 		likes = str(status.favorite_count)
 		username = str(status.user.screen_name)
 		tweet_time = status.created_at.strftime("%Y-%m-%d %I:%M")
-		
+		time_tweeted = datetime.datetime.strptime(tweet_time, '%Y-%m-%d %I:%M')		
 		#print tweet_time
 		
 		bulls_distance = compute_jaccard_distance(status, bulls_words)
@@ -61,7 +62,7 @@ class TweetListener(StreamListener):
 		warriors_distance = compute_jaccard_distance(status, warriors_words)		
 		min_distance = min(bulls_distance, lakers_distance, knicks_distance, celtics_distance, warriors_distance)
 
-		score = str(compute_score(min_distance, retweets, likes, tweet_time, username))
+		score = str(compute_score(min_distance, retweets, likes, time_tweeted, username))
 
 		if min_distance < .985:
 			if min_distance == bulls_distance:
@@ -113,4 +114,3 @@ track = bulls_words + lakers_words + knicks_words + celtics_words + warriors_wor
 
 TweetStream = Stream(auth, TweetListener())
 TweetStream.filter(track = track)
-

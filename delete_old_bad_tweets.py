@@ -12,7 +12,7 @@ if __name__ == '__main__':
 	for team_name in teams:
 		query = ("DELETE FROM " + team_name + "_tweets WHERE date_tweeted < (NOW() - INTERVAL 1 DAY)")
 		cursor.execute(query)
-		query = ("DELETE FROM " + team_name + "_tweets  WHERE id NOT IN (SELECT id FROM (SELECT id FROM " + team_name + "_tweets ORDER BY score ASC LIMIT 500 ) foo)")
+		query = ("DELETE FROM " + team_name + "_tweets  WHERE id NOT IN (SELECT id FROM (SELECT id FROM " + team_name + "_tweets ORDER BY score ASC LIMIT 200 ) foo)")
 #		print query
 		cursor.execute(query)
 
