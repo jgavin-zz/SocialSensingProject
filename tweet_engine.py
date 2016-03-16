@@ -74,7 +74,7 @@ class TweetListener(StreamListener):
 				team_name = 'celtics'
 			else:
 				team_name = 'warriors'
-			query = ("INSERT INTO " + team_name + "_tweets VALUES (" + str(status.id) + ',"' + status.text + '",' + str(min_distance) + ",CURRENT_TIMESTAMP, STR_TO_DATE('" + tweet_time + "', '%Y-%m-%d %h:%i'" + "), " + retweets + ", " + likes + ", '" + username + "', " + score + " );")
+			query = ("INSERT IGNORE INTO " + team_name + "_tweets VALUES (" + str(status.id) + ',"' + status.text + '",' + str(min_distance) + ",CURRENT_TIMESTAMP, STR_TO_DATE('" + tweet_time + "', '%Y-%m-%d %h:%i'" + "), " + retweets + ", " + likes + ", '" + username + "', " + score + " );")
 			cursor.execute(query)
 		cnx.commit()
         	cnx.close()

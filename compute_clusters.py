@@ -62,7 +62,7 @@ def compute_clusters(tweets):
 	clusters = []
 	firstCluster = Cluster(tweets[0])
 	clusters.append(firstCluster)
-	diameter = .3
+	diameter = .5
 	
 	for i in range(len(tweets)):
 		

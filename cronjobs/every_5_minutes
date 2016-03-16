@@ -1,0 +1,1 @@
+* * * * * ec2-user /usr/bin/python /var/www/SocialSensingProject/cronjobs/run_jobs.sh

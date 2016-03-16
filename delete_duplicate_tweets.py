@@ -14,6 +14,9 @@ if __name__ == '__main__':
         cursor = cnx.cursor()
         teams = ['bulls', 'celtics', 'knicks', 'lakers', 'warriors']
         for team_name in teams:
+#		query = ("delete t1 from " + team_name + "_tweets t1, " + team_name + "_tweets t2 where t1.date_inserted > t2.date_inserted and t1.id = t2.id")
+#		print query
+#		cursor.execute(query)
 		query = ('select id, text from ' + team_name.lower() + '_tweets;')
 		cursor.execute(query)
 		tweets = []

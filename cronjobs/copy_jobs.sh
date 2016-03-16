@@ -1,6 +1,3 @@
 #!/bin/bash
 
-sudo cp sort_tweets_job /etc/cron.d
-sudo cp delete_old_tweets_job /etc/cron.d
-sudo cp delete_duplicate_tweets_job /etc/cron.d
-sudo cp count_tweets_job /etc/cron.d
+sudo cp every_5_minutes /etc/cron.d

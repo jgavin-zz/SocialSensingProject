@@ -64,7 +64,7 @@ cursor.execute(dropTableQuery)
 
 #bulls_tweets
 createTableQuery = ('''CREATE TABLE bulls_tweets (
-						id VARCHAR(20) NOT NULL,
+						id VARCHAR(20) NOT NULL PRIMARY KEY,
 						text VARCHAR(200) NOT NULL,
 						distance double NOT NULL,
 						date_inserted timestamp,
@@ -78,7 +78,7 @@ cursor.execute(createTableQuery)
 
 #celtics_tweets
 createTableQuery = ('''CREATE TABLE celtics_tweets (
-                                                id VARCHAR(20) NOT NULL,
+                                                id VARCHAR(20) NOT NULL PRIMARY KEY,
                                                 text VARCHAR(200) NOT NULL,
                                                 distance double NOT NULL,
                                                 date_inserted timestamp,
@@ -92,7 +92,7 @@ cursor.execute(createTableQuery)
 
 #lakers_tweets
 createTableQuery = ('''CREATE TABLE lakers_tweets (
-                                                id VARCHAR(20) NOT NULL,
+                                                id VARCHAR(20) NOT NULL PRIMARY KEY,
                                                 text VARCHAR(200) NOT NULL,
                                                 distance double NOT NULL,
                                                 date_inserted timestamp,
@@ -106,7 +106,7 @@ cursor.execute(createTableQuery)
 
 #knicks_tweets
 createTableQuery = ('''CREATE TABLE knicks_tweets (
-                                                id VARCHAR(20) NOT NULL,
+                                                id VARCHAR(20) NOT NULL PRIMARY KEY,
                                                 text VARCHAR(200) NOT NULL,
                                                 distance double NOT NULL,
                                                	date_inserted timestamp,
@@ -120,7 +120,7 @@ cursor.execute(createTableQuery)
 
 #warriors_tweets
 createTableQuery = ('''CREATE TABLE warriors_tweets (
-                                                id VARCHAR(20) NOT NULL,
+                                                id VARCHAR(20) NOT NULL PRIMARY KEY,
                                                 text VARCHAR(200) NOT NULL,
                                                 distance double NOT NULL,
                                                 date_inserted timestamp,
