@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> BSC Sign Up </title>
+		<link rel="stylesheet" href="/static/forms.css">
+		<link rel="icon" href= "icon.png">
+	</head>
+
+	<body background = "background.jpg">
+		<div id="horizon">
+    		<div id="content">			
+				<form action="submit.php" method = "POST" autocomplete = "on" >
+					<!-- Title -->
+					<span>
+						Join 
+
+						<span class = "headline">
+							<a href="login.html">
+								Box Score Chatter
+							</a>
+						</span> 
+
+						today.
+					</span>
+					<hr>
+
+					<span>
+						<input name = "full_name" type = "text" placeholder="Full Name" required class = "text_box">
+					</span>
+
+					<span>
+						<input name = "email" type = "email" placeholder="Email" required class = "text_box">
+					</span>
+				
+					<span>
+
+						<input name = "password" type = "password" placeholder="Password" pattern=".{6,}" required title="6+ Characters" required class = "text_box">
+					</span>
+
+					<span>
+						<input name = "confirm_password" type = "password" placeholder="Confirm Password" pattern=".{6,}" required title="6+ Characters" required class = "text_box">
+					</span>
+					
+					<span>
+						<input type = "submit" value = "Sign up" class="button" class = "text_box"></input>
+						<hr>
+					</span> 
+
+					<span class = "bodytext">
+						Already have an account? 
+						<a href="login.html"> 
+							Log in Here >>
+						</a>
+					</span><br>
+
+					
+ 					<span class = "bodytext footer" >
+ 						Copyright &#169; 2016 <a href= "https://www.linkedin.com/in/jake-gavin-46786672" class = "bio"> Jacob Gavin</a> and <a href= "https://www.linkedin.com/in/ryantick" class = "bio"> Ryan Tick </a>
+ 					</span>
+				</form>
+			</div>
+		</div>
+	</body>
+</html> 

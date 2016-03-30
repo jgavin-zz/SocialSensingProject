@@ -1,0 +1,83 @@
+form {
+  color: #A9A9A9; /* text color */
+  width: 250px; /* width of form element */ 
+  padding:10px; /* centering inside border */
+  border-radius: 10px; /* outline border radius */
+  border: 2px solid #A9A9A9;/* border line */
+  text-align: center;
+  background: white;
+}
+
+.text_box {
+  width:180px; /* width of form element */ 
+  height: 15px; /* height of form element */ 
+  border-radius: 5px; /* outline border radius */
+  border: thin solid #D3D3D3; /* border line */
+  padding: 5px; /* Padding of words */
+  margin-bottom: 10px;
+}
+
+.button {
+	width: 180px; /* width of form element */ 
+	height: 25px; /* height of form element */ 
+	border-radius: 5px; /* outline border radius */
+
+  background-color: #4099FF; /* inside button color */
+	border: thin solid #4099FF; /* button border */
+  color: white; /* font color */
+	font-size: 60%; /* changing font size */
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.headline {
+  color: #4099FF; 
+  font-family: Impact, Charcoal, sans-serif;
+}
+
+.bodytext {
+  font-size: 10px;
+}
+
+.footer {
+  color: #D3D3D3;
+}
+
+.password {
+  margin-top: 10px;
+}
+
+a {
+  color: #4099FF; /* making links blue color */
+  text-decoration: none; /* no line under links */
+}
+
+a:hover {
+  text-decoration: underline; /* underline if link is hovered over */
+}
+
+.bio {
+  color: #D3D3D3;
+  text-decoration: none;
+}
+
+#horizon {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    width: 100%;
+}
+
+#content {
+    margin-left: -125px;
+    position: absolute;
+    top: -130px;
+    left: 50%;
+    width: 250px;
+    height: 70px;
+}
+
+hr { 
+  margin-bottom: 10px;
+  border-color:#4099FF; /* color of line breaks */
+}

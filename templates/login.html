@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>BSC</title>
+		<link rel="stylesheet" href="/static/forms.css">
+		<link rel="icon" href= "icon.png">
+	</head>
+
+	<body background = "background.jpg">
+		<div id="horizon">
+    		<div id="content">
+				<form action="submit.php" method="POST" autocomplete = "on">
+
+					<!-- Title -->
+					<span>
+						Enter
+
+						<span class = "headline">
+							<a href="login.html">
+								Box Score Chatter
+							</a>
+						</span> 
+						today.
+					</span>
+					<hr>
+
+					<!-- username form element -->
+					<span>
+						<input name = "username" type = "email" placeholder="Email" required class = "text_box">
+					</span>
+
+					<!-- password form element -->
+					<span>
+						<input name = "password" type = "password" placeholder="Password" required class = "text_box"><br>
+					</span>
+
+					<!-- checkbox & forgot password -->
+					<span>
+						<span>
+							<!-- checkbox -->
+							<input type="checkbox" name="remember" value="remember" id = "remember">
+							<label for="remember" class = "bodytext">Remember me &#8226;</label>
+						</span>
+
+						<!-- forgot password link -->
+						<span>
+							<a href="forgot.html" class = "bodytext"> 
+								Forgot Password? 
+							</a>
+						</span>
+					</span>
+
+					<!-- Log in button --> 
+					<span>
+						<input type = "submit" value = "Log in" class="button"></input><hr>
+					</span>
+
+					<span class = "bodytext"> 
+						Don't have an account? 
+						<a href="register.html" class = "bodytext"> 
+							Sign Up >> 
+						</a> 
+					</span><br>
+
+					<span class = "bodytext footer" >
+ 						Copyright &#169; 2016 <a href= "https://www.linkedin.com/in/jake-gavin-46786672" class = "bio"> Jacob Gavin</a> and <a href= "https://www.linkedin.com/in/ryantick" class = "bio"> Ryan Tick </a>
+ 					</span>
+				</div>
+			</div>
+		</form>
+	</body>
+</html>
