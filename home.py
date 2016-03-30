@@ -2,11 +2,15 @@ from flask import Flask
 from flask.ext.cache import Cache
 from flask import render_template
 from flask.ext.twitter_oembedder import TwitterOEmbedder
+from flask import request
 import tweepy
 from tweepy import OAuthHandler
 from fetch_top_tweets import fetch_top_tweets	
+from fetch_all_tweets import fetch_all_tweets
+from update_retweets import update_retweets
 import requests
-
+import json
+import datetime
 app = Flask(__name__)
 
 cache = Cache(app, config={'CACHE_TYPE': 'simple'})
@@ -21,18 +25,22 @@ app.config['TWITTER_TOKEN_SECRET'] = 'YsLyHMKLoUl47cCge1sBb7KfjDhg2wBbjWhBWm4VVO
 def home():
     return render_template('home.html')
     
-    
-#@app.route('/teams/')
-#def teams():
-#    return 'Here is the teams page!'
-    
-    
 @app.route('/teams/<team_name>/')
 def team_name(team_name):
 	tweet_ids = fetch_top_tweets(team_name)
 	return render_template('team_name.html', team_name = team_name, tweet_ids = tweet_ids)
 	
 
-#if __name__ == '__main__':
-#	app.debug = True
-	#app.run()
+@app.route('/get_tweets')
+def get_tweets():
+	tweets = fetch_all_tweets()
+	return tweets
+                
+@app.route('/post_tweets', methods = ['POST'])
+def post_tweets():
+	data = request.json
+	update_retweets(data)
+	logfile = open("/var/www/SocialSensingProject/log.txt", 'a')
+	logfile.write("Posted tweets at " + str(datetime.datetime.now())+ '\n')
+	logfile.close()
+	return "posted tweets"
