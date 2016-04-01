@@ -44,3 +44,15 @@ def post_tweets():
 	logfile.write("Posted tweets at " + str(datetime.datetime.now())+ '\n')
 	logfile.close()
 	return "posted tweets"
+
+@app.route('/login')
+def login():
+    return render_template('login.html')
+
+@app.route('/register')
+def register():
+    return render_template('register.html')
+
+@app.route('/forgot')
+def forgot():
+    return render_template('forgot.html')
