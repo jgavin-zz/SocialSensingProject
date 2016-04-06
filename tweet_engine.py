@@ -46,8 +46,8 @@ class TweetListener(StreamListener):
                               charset='utf8',
                               use_unicode=True)
 		cursor = cnx.cursor()
-		status.text = status.text.replace("'", '')
-                status.text = status.text.replace('"', "")
+        status.text = status.text.lower()
+		status.text = re.sub("[^a-zA-Z ]","", status.text)
 
 		try:		
 			if detect(status.text) != 'en':
