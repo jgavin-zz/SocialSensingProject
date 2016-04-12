@@ -1,3 +1,5 @@
+from check_basketball_keywords import check_basketball_keywords
+import re
 import tweepy
 import json
 from tweepy.streaming import StreamListener
@@ -38,17 +40,22 @@ def compute_jaccard_distance(status, centroid):
 	return 1 - float(intersection)/float(union)
 
 class TweetListener(StreamListener):
+		
+	def on_status(self, status):
 
-	cnx = mysql.connector.connect(user='root', password='bob',
+		self.cnx = mysql.connector.connect(user='root', password='bob',
                               host='127.0.0.1',
                               database='socialsensing',
                               charset='utf8',
                               use_unicode=True)
-	cursor = cnx.cursor()
-		
-	def on_status(self, status):
+		self.cursor = self.cnx.cursor()
         	status.text = status.text.lower()
 		status.text = re.sub("[^a-zA-Z ]","", status.text)
+
+		if check_basketball_keywords(status.text) == 0:
+			return
+		else:
+			print status.text
 
 		try:		
 			if detect(status.text) != 'en':
@@ -81,14 +88,21 @@ class TweetListener(StreamListener):
 			else:
 				team_name = 'warriors'
 			score = str(compute_score(min_distance, retweets, likes, time_tweeted, username, team_name))
+
+
 			query = ("INSERT IGNORE INTO " + team_name + "_tweets VALUES (" + str(status.id) + ',"' + status.text + '",' + str(min_distance) + ",CURRENT_TIMESTAMP, STR_TO_DATE('" + tweet_time + "', '%Y-%m-%d %h:%i'" + "), " + retweets + ", " + likes + ", '" + username + "', " + score + " );")
-			cursor.execute(query)
+
+			try:
+				self.cursor.execute(query)
+			except:
+				print 'failed to execute'
 		self.cnx.commit()
         	self.cnx.close()
 	def on_error(self, status):
 		print(status)
 		self.cnx.commit()
         	self.cnx.close()
+
 		            
 #Perform OAuth
 auth = tweepy.OAuthHandler('FrTtImImzPxthrIjkTFrsUatY', 'cbPq4hNVEIj87LKcnP4XgCPAdPVc0By8ZVKH7WWVE5H9FS6ihb')
