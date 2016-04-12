@@ -17,12 +17,12 @@ if __name__ == '__main__':
 #		query = ("delete t1 from " + team_name + "_tweets t1, " + team_name + "_tweets t2 where t1.date_inserted > t2.date_inserted and t1.id = t2.id")
 #		print query
 #		cursor.execute(query)
-		query = ('select id, text from ' + team_name.lower() + '_tweets;')
+		query = ('select id, text, score from ' + team_name.lower() + '_tweets;')
 		cursor.execute(query)
 		tweets = []
 		tweets_to_delete = []
-		for (id, text) in cursor:
-			tweet = {'id': str(id), 'text': text}
+		for (id, text, score) in cursor:
+			tweet = {'id': str(id), 'text': text, 'score': score}
 			tweets.append(tweet)
 		
 		clusters = compute_clusters(tweets)

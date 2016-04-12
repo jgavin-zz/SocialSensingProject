@@ -10,7 +10,11 @@ def remove_tweets(clusters, team_name):
         cursor = cnx.cursor()
 
 	for cluster in clusters:
-		keep_tweet = cluster.centroid
+		keep_tweet = cluster.tweets[0]
+		for tweet in cluster.tweets:
+			if tweet['score'] < keep_tweet['score']:
+				keep_tweet = tweet
+
 		for tweet in cluster.tweets:
 			if tweet != keep_tweet:
 							 
