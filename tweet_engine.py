@@ -54,8 +54,6 @@ class TweetListener(StreamListener):
 
 		if check_basketball_keywords(status.text) == 0:
 			return
-		else:
-			print status.text
 
 		try:		
 			if detect(status.text) != 'en':
