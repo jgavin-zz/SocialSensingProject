@@ -47,7 +47,7 @@ class TweetListener(StreamListener):
 	cursor = cnx.cursor()
 		
 	def on_status(self, status):
-        status.text = status.text.lower()
+        	status.text = status.text.lower()
 		status.text = re.sub("[^a-zA-Z ]","", status.text)
 
 		try:		
@@ -88,7 +88,7 @@ class TweetListener(StreamListener):
 	def on_error(self, status):
 		print(status)
 		self.cnx.commit()
-        self.cnx.close()
+        	self.cnx.close()
 		            
 #Perform OAuth
 auth = tweepy.OAuthHandler('FrTtImImzPxthrIjkTFrsUatY', 'cbPq4hNVEIj87LKcnP4XgCPAdPVc0By8ZVKH7WWVE5H9FS6ihb')
