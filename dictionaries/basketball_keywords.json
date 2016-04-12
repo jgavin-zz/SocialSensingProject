@@ -10,11 +10,11 @@
     "deal",
     "sports",
     "bench",
-    "benches"
+    "benches",
     "draft",
     "drafts",
     "round",
-    "rounds"
+    "rounds",
     "career",
     "careers",
     "defender",
@@ -50,7 +50,7 @@
     "forward",
     "forwards",
     "center",
-    "centers"
+    "centers",
     "basketball",
     "win",
     "wins",
@@ -63,7 +63,7 @@
     "assist",
     "assists",
     "steal",
-    "steals"
+    "steals",
     "oop",
     "threes",
     "lineup",
