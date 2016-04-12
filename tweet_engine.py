@@ -38,14 +38,15 @@ def compute_jaccard_distance(status, centroid):
 	return 1 - float(intersection)/float(union)
 
 class TweetListener(StreamListener):
-		
-	def on_status(self, status):
-		cnx = mysql.connector.connect(user='root', password='bob',
+
+	cnx = mysql.connector.connect(user='root', password='bob',
                               host='127.0.0.1',
                               database='socialsensing',
                               charset='utf8',
                               use_unicode=True)
-		cursor = cnx.cursor()
+	cursor = cnx.cursor()
+		
+	def on_status(self, status):
         status.text = status.text.lower()
 		status.text = re.sub("[^a-zA-Z ]","", status.text)
 
@@ -82,10 +83,12 @@ class TweetListener(StreamListener):
 			score = str(compute_score(min_distance, retweets, likes, time_tweeted, username, team_name))
 			query = ("INSERT IGNORE INTO " + team_name + "_tweets VALUES (" + str(status.id) + ',"' + status.text + '",' + str(min_distance) + ",CURRENT_TIMESTAMP, STR_TO_DATE('" + tweet_time + "', '%Y-%m-%d %h:%i'" + "), " + retweets + ", " + likes + ", '" + username + "', " + score + " );")
 			cursor.execute(query)
-		cnx.commit()
-        	cnx.close()
+		self.cnx.commit()
+        	self.cnx.close()
 	def on_error(self, status):
 		print(status)
+		self.cnx.commit()
+        self.cnx.close()
 		            
 #Perform OAuth
 auth = tweepy.OAuthHandler('FrTtImImzPxthrIjkTFrsUatY', 'cbPq4hNVEIj87LKcnP4XgCPAdPVc0By8ZVKH7WWVE5H9FS6ihb')
@@ -117,5 +120,12 @@ warriors_words = warriors_json['players'] + warriors_json['staff'] + warriors_js
 
 track = bulls_words + lakers_words + knicks_words + celtics_words + warriors_words
 
-TweetStream = Stream(auth, TweetListener())
-TweetStream.filter(track = track)
+
+going = 1
+while going:
+	try:
+		TweetStream = Stream(auth, TweetListener())
+		TweetStream.filter(track = track)
+		
+	except tweepy.TweepError as e:
+		pass
