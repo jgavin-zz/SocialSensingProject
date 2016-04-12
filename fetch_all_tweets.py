@@ -17,5 +17,9 @@ def fetch_all_tweets():
 		cursor.execute(query)
 		for (id) in cursor:
 			tweets[team_name].append(''.join(id))
+			
+	cnx.commit()
+	cnx.close()
 	return json.dumps(tweets)
 	#return tweets
+	

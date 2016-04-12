@@ -12,4 +12,7 @@ def fetch_top_tweets(team_name):
 	cursor.execute(query)
 	for (id) in cursor:
 		ids.append(int(''.join(id)))
+		
+	cnx.commit()
+	cnx.close()
 	return ids	

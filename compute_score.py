@@ -37,6 +37,9 @@ def compute_score(distance, retweets, likes, time_tweeted, username, team_name):
 	logfile.write("Total score: " + str(score)+ '\n')
 	logfile.write("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\n")
 	logfile.close()
+	
+	cnx.commit()
+	cnx.close()
 
 
 	return score
