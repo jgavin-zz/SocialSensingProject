@@ -10,13 +10,6 @@ from compute_score import compute_score
 import datetime
 from langdetect import detect
 
-cnx = mysql.connector.connect(user='root', password='bob',
-                              host='127.0.0.1',
-                              database='socialsensing',
-                              charset='utf8',
-                              use_unicode=True)
-cursor = cnx.cursor()
-
 def compute_jaccard_distance(status, centroid):
 
 	tweet_words = []
@@ -92,13 +85,10 @@ class TweetListener(StreamListener):
 
 
 			query = ("INSERT IGNORE INTO " + team_name + "_tweets VALUES (" + str(status.id) + ',"' + status.text + '",' + str(min_distance) + ",CURRENT_TIMESTAMP, STR_TO_DATE('" + tweet_time + "', '%Y-%m-%d %h:%i'" + "), " + retweets + ", " + likes + ", '" + username + "', " + score + " );")
-
-			try:
-				cursor.execute(query)
-				cnx.commit()
-				print "Inserted tweet"
-			except:
-				print 'Failed to insert tweet'
+			logfile = open("/var/www/SocialSensingProject/tweets.txt", 'a')
+			logfile.write(query)
+			logfile.close()
+			
 				
 	def on_error(self, status):
 		print(status)
