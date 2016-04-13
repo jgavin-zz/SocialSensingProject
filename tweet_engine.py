@@ -42,13 +42,17 @@ def compute_jaccard_distance(status, centroid):
 class TweetListener(StreamListener):
 		
 	def on_status(self, status):
-
-		self.cnx = mysql.connector.connect(user='root', password='bob',
+		
+		if not hasattr(TweetListener, 'cnx'):
+			self.cnx = mysql.connector.connect(user='root', password='bob',
                               host='127.0.0.1',
                               database='socialsensing',
                               charset='utf8',
                               use_unicode=True)
-		self.cursor = self.cnx.cursor()
+			self.cursor = self.cnx.cursor()
+			print "Made a new connection"
+		else:
+			print "Already have a connection"
         	status.text = status.text.lower()
 		status.text = re.sub("[^a-zA-Z ]","", status.text)
 
@@ -94,10 +98,11 @@ class TweetListener(StreamListener):
 				self.cursor.execute(query)
 			except:
 				print 'failed to execute'
-		self.cnx.commit()
-        	self.cnx.close()
+		#self.cnx.commit()
+        	#self.cnx.close()
 	def on_error(self, status):
 		print(status)
+		print status.text
 		self.cnx.commit()
         	self.cnx.close()
 
@@ -132,12 +137,5 @@ warriors_words = warriors_json['players'] + warriors_json['staff'] + warriors_js
 
 track = bulls_words + lakers_words + knicks_words + celtics_words + warriors_words
 
-
-going = 1
-while going:
-	try:
-		TweetStream = Stream(auth, TweetListener())
-		TweetStream.filter(track = track)
-		
-	except tweepy.TweepError as e:
-		pass
+TweetStream = Stream(auth, TweetListener())
+TweetStream.filter(track = track)
