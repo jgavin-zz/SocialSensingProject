@@ -49,7 +49,9 @@ def compute_jaccard_distance(status, centroid):
 class TweetListener(StreamListener):
 		
 	def on_status(self, status):
-		
+
+		global cnx
+		global cursor		
         	status.text = status.text.lower()
 		status.text = re.sub("[^a-zA-Z ]","", status.text)
 
@@ -92,13 +94,16 @@ class TweetListener(StreamListener):
 			query = ("INSERT IGNORE INTO " + team_name + "_tweets VALUES (" + str(status.id) + ',"' + status.text + '",' + str(min_distance) + ",CURRENT_TIMESTAMP, STR_TO_DATE('" + tweet_time + "', '%Y-%m-%d %h:%i'" + "), " + retweets + ", " + likes + ", '" + username + "', " + score + " );")
 
 			try:
-				self.cursor.execute(query)
+				cursor.execute(query)
+				cnx.commit()
+				print "Inserted tweet"
 			except:
-				print 'failed to execute'
+				print 'Failed to insert tweet'
 				
 	def on_error(self, status):
 		print(status)
 		print status.text
+		global cnx
 		cnx.commit()
         	cnx.close()
 
@@ -133,5 +138,12 @@ warriors_words = warriors_json['players'] + warriors_json['staff'] + warriors_js
 
 track = bulls_words + lakers_words + knicks_words + celtics_words + warriors_words
 
-TweetStream = Stream(auth, TweetListener())
-TweetStream.filter(track = track)
+
+going = 1
+while going:
+	try:
+		TweetStream = Stream(auth, TweetListener())
+		TweetStream.filter(track = track)
+		
+	except:
+		continue
