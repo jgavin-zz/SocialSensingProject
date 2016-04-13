@@ -10,6 +10,13 @@ from compute_score import compute_score
 import datetime
 from langdetect import detect
 
+cnx = mysql.connector.connect(user='root', password='bob',
+                              host='127.0.0.1',
+                              database='socialsensing',
+                              charset='utf8',
+                              use_unicode=True)
+cursor = cnx.cursor()
+
 def compute_jaccard_distance(status, centroid):
 
 	tweet_words = []
@@ -43,16 +50,6 @@ class TweetListener(StreamListener):
 		
 	def on_status(self, status):
 		
-		if not hasattr(TweetListener, 'cnx'):
-			self.cnx = mysql.connector.connect(user='root', password='bob',
-                              host='127.0.0.1',
-                              database='socialsensing',
-                              charset='utf8',
-                              use_unicode=True)
-			self.cursor = self.cnx.cursor()
-			print "Made a new connection"
-		else:
-			print "Already have a connection"
         	status.text = status.text.lower()
 		status.text = re.sub("[^a-zA-Z ]","", status.text)
 
@@ -98,13 +95,12 @@ class TweetListener(StreamListener):
 				self.cursor.execute(query)
 			except:
 				print 'failed to execute'
-		#self.cnx.commit()
-        	#self.cnx.close()
+				
 	def on_error(self, status):
 		print(status)
 		print status.text
-		self.cnx.commit()
-        	self.cnx.close()
+		cnx.commit()
+        	cnx.close()
 
 		            
 #Perform OAuth
