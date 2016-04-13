@@ -84,7 +84,7 @@ class TweetListener(StreamListener):
 			score = str(compute_score(min_distance, retweets, likes, time_tweeted, username, team_name))
 
 
-			query = ("INSERT IGNORE INTO " + team_name + "_tweets VALUES (" + str(status.id) + ',"' + status.text + '",' + str(min_distance) + ",CURRENT_TIMESTAMP, STR_TO_DATE('" + tweet_time + "', '%Y-%m-%d %h:%i'" + "), " + retweets + ", " + likes + ", '" + username + "', " + score + " );")
+			query = ("INSERT IGNORE INTO " + team_name + "_tweets VALUES (" + str(status.id) + ',"' + status.text + '",' + str(min_distance) + ",CURRENT_TIMESTAMP, STR_TO_DATE('" + tweet_time + "', '%Y-%m-%d %h:%i'" + "), " + retweets + ", " + likes + ", '" + username + "', " + score + " );" + "\n")
 			logfile = open("/var/www/SocialSensingProject/tweets.txt", 'a')
 			logfile.write(query)
 			logfile.close()
