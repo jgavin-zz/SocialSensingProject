@@ -19,10 +19,10 @@ if __name__ == '__main__':
 		count = 1
 		new_scores = []
 		for (id, distance, retweets, likes, time_tweeted, username) in cursor:
-			logfile = open("/var/www/SocialSensingProject/score_log.txt", 'a')
-        		logfile.write("Count:  " + str(count) + '\n')
-        		logfile.close()
-			count = count + 1
+#			logfile = open("/var/www/SocialSensingProject/score_log.txt", 'a')
+#        		logfile.write("Count:  " + str(count) + '\n')
+#        		logfile.close()
+#			count = count + 1
 			new_score = {'id': id, 'score': compute_score(distance, retweets, likes, time_tweeted, username, team_name)}
 			new_scores.append(new_score)	
 		

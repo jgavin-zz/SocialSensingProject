@@ -13,10 +13,12 @@ def compute_score(distance, retweets, likes, time_tweeted, username, team_name):
 
 	query = ("select MAX(retweets) as rt from " + team_name.lower() + "_tweets;")
 	cursor.execute(query)
-	max = 0
+	max = 1
 	for (rt) in cursor:
 		max = rt[0]
-	
+
+	if max == 0:
+		max = 1		
 	max_retweets = float(max)
 	virality_score = 1 - (float(retweets) / max_retweets)
 	
@@ -30,13 +32,13 @@ def compute_score(distance, retweets, likes, time_tweeted, username, team_name):
 
 	score = distance + virality_score + time_score
 
-	logfile = open("/var/www/SocialSensingProject/score_log.txt", 'a')
-	logfile.write("Distance: " + str(distance)+ '\n')
-	logfile.write("Virality score: " + str(virality_score)+ '\n')
-	logfile.write("Time Score: " + str(time_score)+ '\n')
-	logfile.write("Total score: " + str(score)+ '\n')
-	logfile.write("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\n")
-	logfile.close()
+#	logfile = open("/var/www/SocialSensingProject/score_log.txt", 'a')
+#	logfile.write("Distance: " + str(distance)+ '\n')
+#	logfile.write("Virality score: " + str(virality_score)+ '\n')
+#	logfile.write("Time Score: " + str(time_score)+ '\n')
+#	logfile.write("Total score: " + str(score)+ '\n')
+#	logfile.write("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\n")
+#	logfile.close()
 	
 	cnx.commit()
 	cnx.close()

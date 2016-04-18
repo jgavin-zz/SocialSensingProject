@@ -62,7 +62,7 @@ def compute_clusters(tweets):
 	clusters = []
 	firstCluster = Cluster(tweets[0])
 	clusters.append(firstCluster)
-	diameter = .5
+	diameter = .25
 	
 	for i in range(len(tweets)):
 		
@@ -85,10 +85,10 @@ def compute_clusters(tweets):
 			clusters.append(newCluster)
 
 
-	#for cluster in clusters:
-	#	for tweet in cluster.tweets:
-	#		print tweet['text']
-	#	print "XXXXXXXXXXXXXXXXXXXXXXXXXX"
+#	for cluster in clusters:
+#		for tweet in cluster.tweets:
+#			print tweet['text']
+#		print "XXXXXXXXXXXXXXXXXXXXXXXXXX"
 	
 	return clusters
 		

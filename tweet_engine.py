@@ -42,9 +42,6 @@ def compute_jaccard_distance(status, centroid):
 class TweetListener(StreamListener):
 		
 	def on_status(self, status):
-
-		global cnx
-		global cursor		
         	status.text = status.text.lower()
 		status.text = re.sub("[^a-zA-Z ]","", status.text)
 
@@ -56,12 +53,21 @@ class TweetListener(StreamListener):
 				return
 		except:
 			pass
-		
+
+		try: 
+			status.retweeted_status
+			return
+		except:
+			pass
+#		print status.id
+
 		retweets = str(status.retweet_count)
 		likes = str(status.favorite_count)
 		username = str(status.user.screen_name)
 		tweet_time = status.created_at.strftime("%Y-%m-%d %I:%M")
 		time_tweeted = datetime.datetime.strptime(tweet_time, '%Y-%m-%d %I:%M')		
+
+#		print time_tweeted
 		
 		bulls_distance = compute_jaccard_distance(status, bulls_words)
 		lakers_distance = compute_jaccard_distance(status, lakers_words)
@@ -92,10 +98,6 @@ class TweetListener(StreamListener):
 				
 	def on_error(self, status):
 		print(status)
-		print status.text
-		global cnx
-		cnx.commit()
-        	cnx.close()
 
 		            
 #Perform OAuth
@@ -129,11 +131,11 @@ warriors_words = warriors_json['players'] + warriors_json['staff'] + warriors_js
 track = bulls_words + lakers_words + knicks_words + celtics_words + warriors_words
 
 
-going = 1
-while going:
-	try:
-		TweetStream = Stream(auth, TweetListener())
-		TweetStream.filter(track = track)
+#going = 1
+#while going:
+#	try:
+TweetStream = Stream(auth, TweetListener())
+TweetStream.filter(track = track)
 		
-	except:
-		continue
+#	except:
+#		continue

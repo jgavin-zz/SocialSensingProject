@@ -15,11 +15,11 @@ def remove_tweets(clusters, team_name):
 			if tweet['score'] < keep_tweet['score']:
 				keep_tweet = tweet
 
+		#print keep_tweet['text']
 		for tweet in cluster.tweets:
 			if tweet != keep_tweet:
 							 
-				query = ("DELETE FROM " + team_name + "_tweets WHERE id = " + "'" + keep_tweet['id'] + "'" )
-				cursor.execute(query)
-
+				query = ("DELETE FROM " + team_name + "_tweets WHERE id = " + "'" + tweet['id'] + "';" )
+				result = cursor.execute(query)
         cnx.commit()
         cnx.close()		

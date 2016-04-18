@@ -1,6 +1,7 @@
 * * * * * ec2-user /usr/bin/python /var/www/SocialSensingProject/delete_old_bad_tweets.py
-* * * * * ec2-user /usr/bin/python /var/www/SocialSensingProject/delete_duplicate_tweets.py
+*/5 * * * * ec2-user /usr/bin/python /var/www/SocialSensingProject/delete_duplicate_tweets.py
 * * * * * ec2-user /usr/bin/python /var/www/SocialSensingProject/sort_tweets.py
 * * * * * ec2-user /usr/bin/python /var/www/SocialSensingProject/count_tweets.py
 * * * * * ec2-user /usr/bin/python /var/www/SocialSensingProject/update_scores.py
 * * * * * ec2-user /var/www/SocialSensingProject/cronjobs/monitor_tweet_engine.sh
+* * * * * ec2-user /usr/bin/python /var/www/SocialSensingProject/insert_tweets.py
