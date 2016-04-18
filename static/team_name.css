@@ -15,3 +15,34 @@
     text-align: center;
 }​
 
+.footer {
+	text-align:center;
+	font-size: 10px;
+	color: #D3D3D3;
+	position:fixed;
+	bottom:0px;
+	width:100%;
+}
+.header {
+    overflow:auto;
+    position:absolute;
+    top:-150px;
+    width:100%; 
+    text-align:right;
+}
+
+}
+
+a {
+  color: #4099FF; /* making links blue color */
+  text-decoration: none; /* no line under links */
+}
+
+a:hover {
+  text-decoration: underline; /* underline if link is hovered over */
+}
+
+.bio {
+  color: #D3D3D3;
+  text-decoration: none;
+}

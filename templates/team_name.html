@@ -2,19 +2,12 @@
 <title>Box Score Chatter</title>
 <head>
 	<link rel="stylesheet" type="text/css" href="/static/team_name.css">
+	<link rel="icon" href= "/static/icon.png">
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script src="/static/team_name.js"></script>
 </head>
-<body bgcolor="#81DAF5">
-	<table class = "nav_table">
-		<tr class = "nav_row">
-  			<td class = "nav_cell" id = "Bulls">Bulls</td>
-  			<td class = "nav_cell" id = "Celtics">Celtics</td>
-  			<td class = "nav_cell" id = "Lakers">Lakers</td>
-  			<td class = "nav_cell" id = "Knicks">Knicks</td>
-  			<td class = "nav_cell" id = "Warriors">Warriors</td>
-  		</tr>
-	</table>
+<body background = "/static/background.jpg">
+
 	<div class = "tweets_list" align = "center">
 		{% if team_name %}
   			<h1 class = "header">{{ team_name }} page</h1>
@@ -25,4 +18,17 @@
   			<h1>This page is for default</h1>
 		{% endif %}
 	</div>
+
+	<footer class="footer" style = "color: #D3D3D3;" > 
+
+
+            Copyright &#169; 2016 <a style = "color: #D3D3D3; text-decoration: none;" href= "https://www.linkedin.com/in/jake-gavin-46786672" class = "bio"> Jacob Gavin</a> and <a style = "color: #D3D3D3; text-decoration: none;"href= "https://www.linkedin.com/in/ryantick" > Ryan Tick </a><br>
+
+        	CSS taken from <a style = "color: #D3D3D3; text-decoration: none;"target="_blank" href="https://github.com/web-tiki/responsive-grid-of-hexagons" >web-tiki</a><br>
+
+            Drop Down taken from <a style = "color: #D3D3D3; text-decoration: none;"target="_blank" href="http://www.w3schools.com/css/css_dropdowns.asp" >W3-School</a>
+            
+
+            
+        </footer>
 </body>
