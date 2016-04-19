@@ -4,12 +4,14 @@
 		<title> BSC Sign Up </title>
 		<link rel="stylesheet" href="/static/forms.css">
 		<link rel="icon" href= "/static/icon.png">
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="/static/register.js"></script>
 	</head>
 
 	<body background = "/static/background.jpg">
 		<div id="horizon">
     		<div id="content">			
-				<form action="submit.php" method = "POST" autocomplete = "on" >
+				<form action="/register"  id = "#user-add-form" method = "POST" autocomplete = "on" >
 					<!-- Title -->
 					<span>
 						Join 
@@ -25,20 +27,16 @@
 					<hr>
 
 					<span>
-						<input name = "full_name" type = "text" placeholder="Full Name" required class = "text_box">
-					</span>
-
-					<span>
-						<input name = "email" type = "email" placeholder="Email" required class = "text_box">
+						<input name = "email" id = "#user-email-input" type = "email" placeholder="Email" required class = "text_box">
 					</span>
 				
 					<span>
 
-						<input name = "password" type = "password" placeholder="Password" pattern=".{6,}" required title="6+ Characters" required class = "text_box">
+						<input name = "password" id = "#user-password-input"  type = "password" placeholder="Password" pattern=".{6,}" required title="6+ Characters" required class = "text_box">
 					</span>
 
 					<span>
-						<input name = "confirm_password" type = "password" placeholder="Confirm Password" pattern=".{6,}" required title="6+ Characters" required class = "text_box">
+						<input name = "confirm_password" id = "#user-passwordconfirm-input"  type = "password" placeholder="Confirm Password" pattern=".{6,}" required title="6+ Characters" required class = "text_box">
 					</span>
 					
 					<span>
