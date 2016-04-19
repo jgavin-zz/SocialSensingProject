@@ -8,11 +8,12 @@ def insert_user(email, password):
                               charset='utf8',
                               use_unicode=True)
 	cursor = cnx.cursor()
-	query = ("INSERT IGNORE INTO users VALUES (" + str(email) + ',"' + str(password) + ");")
+	query = ("INSERT IGNORE INTO users VALUES ('" + str(email) + "', '" + str(password) + "');")
 	try:
 		cursor.execute(query)
 		cnx.commit()
 		cnx.close()		
 		return 'Registered successfully'
 	except Error as e:
+		
 		return "mysql error: %s" % e
