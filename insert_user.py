@@ -7,9 +7,11 @@ def insert_user(email, password):
                               charset='utf8',
                               use_unicode=True)
 	cursor = cnx.cursor()
-	
+	query = ("INSERT IGNORE INTO users VALUES (" + str(email) + ',"' + str(password) + ");")
 	try:
-		query = ("INSERT IGNORE INTO users VALUES (" + str(email) + ',"' + str(password) + ");")
+		cursor.execute(query)
+		cnx.commit()
+        cnx.close()		
 		return 1
 	except:
 		return 0
