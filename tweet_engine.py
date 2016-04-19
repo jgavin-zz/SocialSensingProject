@@ -56,6 +56,7 @@ class TweetListener(StreamListener):
 
 		try: 
 			status.retweeted_status
+			print retweeted_status
 			return
 		except:
 			pass
