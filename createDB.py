@@ -58,6 +58,10 @@ cursor.execute(dropTableQuery)
 dropTableQuery = ("DROP TABLE IF EXISTS warriors_top")
 cursor.execute(dropTableQuery)
 
+#Users
+dropTableQuery = ("DROP TABLE IF EXISTS users")
+cursor.execute(dropTableQuery)
+
 ########################
 ## Create tables next ##
 ########################
@@ -164,6 +168,16 @@ cursor.execute(createTableQuery)
 createTableQuery = ('''CREATE TABLE warriors_top (
                                                 id VARCHAR(20) NOT NULL
                                               )'''
+                    )
+cursor.execute(createTableQuery)
+
+
+#Users
+createTableQuery = ('''CREATE TABLE users (
+                                           	username VARCHAR(20) NOT NULL,
+                                                password VARCHAR(20) NOT NULL,
+                                                PRIMARY KEY(username)
+                                          );'''
                     )
 cursor.execute(createTableQuery)
 
