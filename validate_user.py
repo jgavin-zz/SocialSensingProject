@@ -1,4 +1,5 @@
 import mysql.connector
+from mysql.connector import Error
 
 def validate_user(email, psw):
 	cnx = mysql.connector.connect(user='root', password='bob',
@@ -24,10 +25,15 @@ def validate_user(email, psw):
 	if exists == 1:	
 		return "Found user"
 		query = ("select password from users where username = '" + str(email) + "';")
-		cursor.execute(query)
-		return query
-		cnx.commit()
-		cnx.close()
+		try:
+			cursor.execute(query)
+			cnx.commit()
+			cnx.close()		
+			return 'Completed query'
+		except Error as e:		
+			return "mysql error: %s" % e
+			
+			
 		right_password = 0
 		for (password) in cursor:
 			p = str(''.join(password))
