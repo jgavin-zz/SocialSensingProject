@@ -16,11 +16,11 @@ def validate_user(email, psw):
 	users = ''
 	for (username) in cursor:
 		user = str(''.join(username))
-		users = users + user + ''
+		#users = users + user + ' '
 		if user == str(email):
 			exists = 1
 			break
-	return users
+	#return users
 		
 	if exists == 1:	
 		query = ("select password from users where username = '" + str(email) + "';")
@@ -29,7 +29,8 @@ def validate_user(email, psw):
 		cnx.close()
 		right_password = 0
 		for (password) in cursor:
-			if str(psw) == str(''.join(password)):
+			p = str(''.join(password))
+			if str(psw) == p:
 				right_password = 1
 		if right_password == 1:
 			return "Logged in successfully"
