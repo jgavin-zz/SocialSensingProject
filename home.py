@@ -8,6 +8,7 @@ from tweepy import OAuthHandler
 from fetch_top_tweets import fetch_top_tweets	
 from fetch_all_tweets import fetch_all_tweets
 from update_retweets import update_retweets
+from insert_user import insert_user
 import requests
 import json
 import datetime
@@ -52,6 +53,16 @@ def login():
 @app.route('/register')
 def register():
     return render_template('register.html')
+    
+@app.route('/register_user', methods = ['POST']) 
+def register_user():   
+	email = request.form.get('email')
+	password = request.form.get('password')
+	try:
+		insert_user(email, password)
+	except:
+		return "Failed to register"
+	return "Registered successfully"
 
 @app.route('/forgot')
 def forgot():
