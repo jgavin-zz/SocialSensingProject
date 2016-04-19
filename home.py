@@ -62,7 +62,7 @@ def register_user():
 		insert_user(email, password)
 	except:
 		return "Failed to register"
-	return "Registered successfully"
+	return "Registered successfully email: " + str(email)
 
 @app.route('/forgot')
 def forgot():
