@@ -58,10 +58,6 @@ def register():
 def register_user():   
 	email = request.form.get('email')
 	password = request.form.get('password')
-	#if(insert_user(email, password)):
-	#	return "Registered successfully email: " + str(email)
-	#else:
-	#	return "Nah try again"
 	return insert_user(email, password)
 
 @app.route('/forgot')

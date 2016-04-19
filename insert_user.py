@@ -1,4 +1,5 @@
 import mysql.connector
+from mysql.connector import Error
 
 def insert_user(email, password):
 	cnx = mysql.connector.connect(user='root', password='bob',
@@ -12,6 +13,6 @@ def insert_user(email, password):
 		cursor.execute(query)
 		cnx.commit()
 		cnx.close()		
-		return '1'
-	except:
-		return '0'
+		return 'Registered successfully'
+	except Error as e:
+		return "mysql error: %s" % e
