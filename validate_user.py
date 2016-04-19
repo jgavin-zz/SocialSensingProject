@@ -15,6 +15,7 @@ def validate_user(email, psw):
 	exists = 0
 	for (username) in cursor:
 		user = str(''.join(username))
+		return user + ' ' + str(email)
 		if user == str(email):
 			exists = 1
 			break
