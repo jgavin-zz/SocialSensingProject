@@ -28,7 +28,6 @@ def validate_user(email, psw):
 			cursor.execute(query)
 			cnx.commit()
 			cnx.close()		
-			return 'Completed query'
 		except Error as e:		
 			return "mysql error: %s" % e
 			
