@@ -4426,3 +4426,737 @@ There were 200 tweets in the warriors tweets table at 2016-04-19 03:03:02.201742
 Inserted 58 tweets at 2016-04-19 03:03:02.231443
 Sorted tweets at 2016-04-19 03:03:02.266355
 Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 03:03:02.294331
+There were 200 tweets in the bulls tweets table at 2016-04-19 03:04:01.679825.
+There were 200 tweets in the celtics tweets table at 2016-04-19 03:04:01.681640.
+There were 178 tweets in the knicks tweets table at 2016-04-19 03:04:01.683643.
+There were 200 tweets in the lakers tweets table at 2016-04-19 03:04:01.685211.
+There were 200 tweets in the warriors tweets table at 2016-04-19 03:04:01.685450.
+Inserted 41 tweets at 2016-04-19 03:04:01.712731
+Sorted tweets at 2016-04-19 03:04:01.757216
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 03:04:01.785374
+There were 200 tweets in the bulls tweets table at 2016-04-19 03:05:01.268588.
+There were 200 tweets in the celtics tweets table at 2016-04-19 03:05:01.273027.
+There were 181 tweets in the knicks tweets table at 2016-04-19 03:05:01.273298.
+There were 200 tweets in the lakers tweets table at 2016-04-19 03:05:01.273520.
+There were 200 tweets in the warriors tweets table at 2016-04-19 03:05:01.273734.
+Inserted 52 tweets at 2016-04-19 03:05:01.314539
+Sorted tweets at 2016-04-19 03:05:01.368068
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 03:05:01.411257
+Deleted duplicate tweets at 2016-04-19 03:05:06.392573. It took 5 seconds.
+Posted tweets at 2016-04-19 03:05:07.347886
+There were 200 tweets in the bulls tweets table at 2016-04-19 03:06:01.606580.
+There were 133 tweets in the celtics tweets table at 2016-04-19 03:06:01.606822.
+There were 166 tweets in the knicks tweets table at 2016-04-19 03:06:01.607073.
+There were 187 tweets in the lakers tweets table at 2016-04-19 03:06:01.607300.
+There were 186 tweets in the warriors tweets table at 2016-04-19 03:06:01.607543.
+Inserted 27 tweets at 2016-04-19 03:06:01.625053
+Sorted tweets at 2016-04-19 03:06:01.667960
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 03:06:01.698428
+There were 200 tweets in the bulls tweets table at 2016-04-19 03:07:02.037006.
+There were 141 tweets in the celtics tweets table at 2016-04-19 03:07:02.037670.
+There were 174 tweets in the knicks tweets table at 2016-04-19 03:07:02.039335.
+There were 189 tweets in the lakers tweets table at 2016-04-19 03:07:02.039726.
+There were 193 tweets in the warriors tweets table at 2016-04-19 03:07:02.040461.
+Inserted 41 tweets at 2016-04-19 03:07:02.074688
+Sorted tweets at 2016-04-19 03:07:02.113766
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 03:07:02.128758
+There were 200 tweets in the bulls tweets table at 2016-04-19 03:08:01.404249.
+There were 157 tweets in the celtics tweets table at 2016-04-19 03:08:01.404494.
+There were 182 tweets in the knicks tweets table at 2016-04-19 03:08:01.404712.
+There were 194 tweets in the lakers tweets table at 2016-04-19 03:08:01.405491.
+There were 200 tweets in the warriors tweets table at 2016-04-19 03:08:01.405730.
+Inserted 33 tweets at 2016-04-19 03:08:01.422086
+Sorted tweets at 2016-04-19 03:08:01.466082
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 03:08:01.492889
+There were 200 tweets in the bulls tweets table at 2016-04-19 03:09:01.883501.
+There were 176 tweets in the celtics tweets table at 2016-04-19 03:09:01.883742.
+There were 188 tweets in the knicks tweets table at 2016-04-19 03:09:01.884010.
+There were 195 tweets in the lakers tweets table at 2016-04-19 03:09:01.884227.
+There were 200 tweets in the warriors tweets table at 2016-04-19 03:09:01.884948.
+Inserted 39 tweets at 2016-04-19 03:09:01.914746
+Sorted tweets at 2016-04-19 03:09:01.966444
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 03:09:02.005158
+There were 200 tweets in the bulls tweets table at 2016-04-19 03:10:01.425030.
+There were 200 tweets in the celtics tweets table at 2016-04-19 03:10:01.428398.
+There were 194 tweets in the knicks tweets table at 2016-04-19 03:10:01.428672.
+There were 197 tweets in the lakers tweets table at 2016-04-19 03:10:01.428937.
+There were 200 tweets in the warriors tweets table at 2016-04-19 03:10:01.429163.
+Inserted 46 tweets at 2016-04-19 03:10:01.462799
+Sorted tweets at 2016-04-19 03:10:01.542238
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 03:10:01.579963
+Deleted duplicate tweets at 2016-04-19 03:10:05.695553. It took 4 seconds.
+Posted tweets at 2016-04-19 03:10:07.893543
+There were 200 tweets in the bulls tweets table at 2016-04-19 03:11:01.935839.
+There were 155 tweets in the celtics tweets table at 2016-04-19 03:11:01.936133.
+There were 178 tweets in the knicks tweets table at 2016-04-19 03:11:01.936356.
+There were 192 tweets in the lakers tweets table at 2016-04-19 03:11:01.936576.
+There were 192 tweets in the warriors tweets table at 2016-04-19 03:11:01.936796.
+Inserted 49 tweets at 2016-04-19 03:11:01.970047
+Sorted tweets at 2016-04-19 03:11:02.027047
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 03:11:02.065401
+There were 200 tweets in the bulls tweets table at 2016-04-19 03:12:01.436827.
+There were 176 tweets in the celtics tweets table at 2016-04-19 03:12:01.440272.
+There were 189 tweets in the knicks tweets table at 2016-04-19 03:12:01.440513.
+There were 195 tweets in the lakers tweets table at 2016-04-19 03:12:01.441588.
+There were 200 tweets in the warriors tweets table at 2016-04-19 03:12:01.444968.
+Inserted 31 tweets at 2016-04-19 03:12:01.464210
+Sorted tweets at 2016-04-19 03:12:01.516824
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 03:12:01.533318
+There were 200 tweets in the bulls tweets table at 2016-04-19 03:13:01.866138.
+There were 191 tweets in the celtics tweets table at 2016-04-19 03:13:01.870538.
+There were 195 tweets in the knicks tweets table at 2016-04-19 03:13:01.870805.
+There were 196 tweets in the lakers tweets table at 2016-04-19 03:13:01.871023.
+There were 200 tweets in the warriors tweets table at 2016-04-19 03:13:01.871236.
+Inserted 38 tweets at 2016-04-19 03:13:01.907313
+Sorted tweets at 2016-04-19 03:13:01.963653
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 03:13:02.007053
+There were 200 tweets in the bulls tweets table at 2016-04-19 03:14:01.425037.
+There were 200 tweets in the celtics tweets table at 2016-04-19 03:14:01.428377.
+There were 200 tweets in the knicks tweets table at 2016-04-19 03:14:01.429106.
+There were 198 tweets in the lakers tweets table at 2016-04-19 03:14:01.433591.
+There were 200 tweets in the warriors tweets table at 2016-04-19 03:14:01.436736.
+Inserted 30 tweets at 2016-04-19 03:14:01.457234
+Sorted tweets at 2016-04-19 03:14:01.498261
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 03:14:01.530829
+There were 200 tweets in the bulls tweets table at 2016-04-19 03:15:02.029566.
+There were 200 tweets in the celtics tweets table at 2016-04-19 03:15:02.037069.
+There were 200 tweets in the knicks tweets table at 2016-04-19 03:15:02.037346.
+There were 200 tweets in the lakers tweets table at 2016-04-19 03:15:02.037614.
+There were 200 tweets in the warriors tweets table at 2016-04-19 03:15:02.037841.
+Inserted 38 tweets at 2016-04-19 03:15:02.073240
+Sorted tweets at 2016-04-19 03:15:02.143328
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 03:15:02.191548
+Deleted duplicate tweets at 2016-04-19 03:15:06.221116. It took 4 seconds.
+Posted tweets at 2016-04-19 03:15:08.146261
+There were 200 tweets in the bulls tweets table at 2016-04-19 03:16:01.427331.
+There were 171 tweets in the celtics tweets table at 2016-04-19 03:16:01.430265.
+There were 170 tweets in the knicks tweets table at 2016-04-19 03:16:01.430516.
+There were 195 tweets in the lakers tweets table at 2016-04-19 03:16:01.430742.
+There were 194 tweets in the warriors tweets table at 2016-04-19 03:16:01.430959.
+Inserted 35 tweets at 2016-04-19 03:16:01.460395
+Sorted tweets at 2016-04-19 03:16:01.499391
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 03:16:01.527998
+There were 200 tweets in the bulls tweets table at 2016-04-19 03:17:01.825131.
+There were 190 tweets in the celtics tweets table at 2016-04-19 03:17:01.828228.
+There were 179 tweets in the knicks tweets table at 2016-04-19 03:17:01.830587.
+There were 197 tweets in the lakers tweets table at 2016-04-19 03:17:01.831379.
+There were 197 tweets in the warriors tweets table at 2016-04-19 03:17:01.831616.
+Inserted 37 tweets at 2016-04-19 03:17:01.857748
+Sorted tweets at 2016-04-19 03:17:01.918560
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 03:17:01.967350
+There were 200 tweets in the bulls tweets table at 2016-04-19 03:18:01.401322.
+There were 200 tweets in the celtics tweets table at 2016-04-19 03:18:01.405115.
+There were 188 tweets in the knicks tweets table at 2016-04-19 03:18:01.405837.
+There were 199 tweets in the lakers tweets table at 2016-04-19 03:18:01.407551.
+There were 200 tweets in the warriors tweets table at 2016-04-19 03:18:01.408657.
+Inserted 33 tweets at 2016-04-19 03:18:01.431215
+Sorted tweets at 2016-04-19 03:18:01.470130
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 03:18:01.497164
+There were 200 tweets in the bulls tweets table at 2016-04-19 03:19:01.902000.
+There were 200 tweets in the celtics tweets table at 2016-04-19 03:19:01.903203.
+There were 192 tweets in the knicks tweets table at 2016-04-19 03:19:01.904256.
+There were 200 tweets in the lakers tweets table at 2016-04-19 03:19:01.904961.
+There were 200 tweets in the warriors tweets table at 2016-04-19 03:19:01.905517.
+Inserted 67 tweets at 2016-04-19 03:19:01.944546
+Sorted tweets at 2016-04-19 03:19:02.000596
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 03:19:02.049964
+There were 200 tweets in the bulls tweets table at 2016-04-19 03:20:01.486121.
+There were 200 tweets in the celtics tweets table at 2016-04-19 03:20:01.486370.
+There were 200 tweets in the knicks tweets table at 2016-04-19 03:20:01.486590.
+There were 200 tweets in the lakers tweets table at 2016-04-19 03:20:01.487165.
+There were 200 tweets in the warriors tweets table at 2016-04-19 03:20:01.489268.
+Inserted 72 tweets at 2016-04-19 03:20:01.540267
+Sorted tweets at 2016-04-19 03:20:01.592768
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 03:20:01.632347
+Deleted duplicate tweets at 2016-04-19 03:20:05.814118. It took 4 seconds.
+Posted tweets at 2016-04-19 03:20:06.297937
+There were 197 tweets in the bulls tweets table at 2016-04-19 03:21:02.076627.
+There were 135 tweets in the celtics tweets table at 2016-04-19 03:21:02.076912.
+There were 172 tweets in the knicks tweets table at 2016-04-19 03:21:02.077127.
+There were 194 tweets in the lakers tweets table at 2016-04-19 03:21:02.077337.
+There were 194 tweets in the warriors tweets table at 2016-04-19 03:21:02.077543.
+Inserted 59 tweets at 2016-04-19 03:21:02.112168
+Sorted tweets at 2016-04-19 03:21:02.154566
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 03:21:02.217435
+There were 198 tweets in the bulls tweets table at 2016-04-19 03:22:01.516699.
+There were 171 tweets in the celtics tweets table at 2016-04-19 03:22:01.518149.
+There were 184 tweets in the knicks tweets table at 2016-04-19 03:22:01.518745.
+There were 200 tweets in the lakers tweets table at 2016-04-19 03:22:01.521004.
+There were 198 tweets in the warriors tweets table at 2016-04-19 03:22:01.521631.
+Inserted 59 tweets at 2016-04-19 03:22:01.560581
+Sorted tweets at 2016-04-19 03:22:01.608695
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 03:22:01.624357
+There were 200 tweets in the bulls tweets table at 2016-04-19 03:23:02.041885.
+There were 194 tweets in the celtics tweets table at 2016-04-19 03:23:02.042131.
+There were 200 tweets in the knicks tweets table at 2016-04-19 03:23:02.042347.
+There were 200 tweets in the lakers tweets table at 2016-04-19 03:23:02.042592.
+There were 200 tweets in the warriors tweets table at 2016-04-19 03:23:02.043947.
+Inserted 81 tweets at 2016-04-19 03:23:02.095615
+Sorted tweets at 2016-04-19 03:23:02.137948
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 03:23:02.163140
+There were 200 tweets in the bulls tweets table at 2016-04-19 03:24:01.560971.
+There were 200 tweets in the celtics tweets table at 2016-04-19 03:24:01.561217.
+There were 200 tweets in the knicks tweets table at 2016-04-19 03:24:01.561436.
+There were 200 tweets in the lakers tweets table at 2016-04-19 03:24:01.573065.
+There were 200 tweets in the warriors tweets table at 2016-04-19 03:24:01.574035.
+Inserted 49 tweets at 2016-04-19 03:24:01.604134
+Sorted tweets at 2016-04-19 03:24:01.642143
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 03:24:01.670861
+There were 200 tweets in the bulls tweets table at 2016-04-19 03:25:02.152228.
+There were 200 tweets in the celtics tweets table at 2016-04-19 03:25:02.153840.
+There were 200 tweets in the knicks tweets table at 2016-04-19 03:25:02.154070.
+There were 200 tweets in the lakers tweets table at 2016-04-19 03:25:02.154285.
+There were 200 tweets in the warriors tweets table at 2016-04-19 03:25:02.154497.
+Inserted 59 tweets at 2016-04-19 03:25:02.201754
+Sorted tweets at 2016-04-19 03:25:02.245059
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 03:25:02.294845
+Posted tweets at 2016-04-19 03:25:07.020392
+Deleted duplicate tweets at 2016-04-19 03:25:11.549573. It took 9 seconds.
+There were 198 tweets in the bulls tweets table at 2016-04-19 03:26:01.753678.
+There were 83 tweets in the celtics tweets table at 2016-04-19 03:26:01.760133.
+There were 142 tweets in the knicks tweets table at 2016-04-19 03:26:01.760965.
+There were 193 tweets in the lakers tweets table at 2016-04-19 03:26:01.761195.
+There were 188 tweets in the warriors tweets table at 2016-04-19 03:26:01.761409.
+Inserted 44 tweets at 2016-04-19 03:26:01.791859
+Sorted tweets at 2016-04-19 03:26:01.828082
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 03:26:01.856401
+There were 200 tweets in the bulls tweets table at 2016-04-19 03:27:02.069309.
+There were 110 tweets in the celtics tweets table at 2016-04-19 03:27:02.070107.
+There were 145 tweets in the knicks tweets table at 2016-04-19 03:27:02.072975.
+There were 198 tweets in the lakers tweets table at 2016-04-19 03:27:02.073225.
+There were 193 tweets in the warriors tweets table at 2016-04-19 03:27:02.073628.
+Inserted 43 tweets at 2016-04-19 03:27:02.104095
+Sorted tweets at 2016-04-19 03:27:02.153506
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 03:27:02.180208
+There were 200 tweets in the bulls tweets table at 2016-04-19 03:28:01.373994.
+There were 135 tweets in the celtics tweets table at 2016-04-19 03:28:01.375592.
+There were 153 tweets in the knicks tweets table at 2016-04-19 03:28:01.377145.
+There were 199 tweets in the lakers tweets table at 2016-04-19 03:28:01.377728.
+There were 199 tweets in the warriors tweets table at 2016-04-19 03:28:01.381199.
+Inserted 39 tweets at 2016-04-19 03:28:01.408639
+Sorted tweets at 2016-04-19 03:28:01.448546
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 03:28:01.475804
+There were 200 tweets in the bulls tweets table at 2016-04-19 03:29:01.769925.
+There were 157 tweets in the celtics tweets table at 2016-04-19 03:29:01.770161.
+There were 159 tweets in the knicks tweets table at 2016-04-19 03:29:01.770370.
+There were 200 tweets in the lakers tweets table at 2016-04-19 03:29:01.770614.
+There were 200 tweets in the warriors tweets table at 2016-04-19 03:29:01.773854.
+Inserted 44 tweets at 2016-04-19 03:29:01.801598
+Sorted tweets at 2016-04-19 03:29:01.855076
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 03:29:01.877939
+There were 200 tweets in the bulls tweets table at 2016-04-19 03:30:01.297967.
+There were 180 tweets in the celtics tweets table at 2016-04-19 03:30:01.298212.
+There were 168 tweets in the knicks tweets table at 2016-04-19 03:30:01.300969.
+There were 200 tweets in the lakers tweets table at 2016-04-19 03:30:01.302284.
+There were 200 tweets in the warriors tweets table at 2016-04-19 03:30:01.302525.
+Inserted 29 tweets at 2016-04-19 03:30:01.333587
+Sorted tweets at 2016-04-19 03:30:01.380934
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 03:30:01.420066
+Posted tweets at 2016-04-19 03:30:06.780828
+Deleted duplicate tweets at 2016-04-19 03:30:06.792455. It took 5 seconds.
+There were 198 tweets in the bulls tweets table at 2016-04-19 03:31:02.037011.
+There were 106 tweets in the celtics tweets table at 2016-04-19 03:31:02.042272.
+There were 153 tweets in the knicks tweets table at 2016-04-19 03:31:02.043074.
+There were 196 tweets in the lakers tweets table at 2016-04-19 03:31:02.043316.
+There were 182 tweets in the warriors tweets table at 2016-04-19 03:31:02.043535.
+Inserted 62 tweets at 2016-04-19 03:31:02.078479
+Sorted tweets at 2016-04-19 03:31:02.107052
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 03:31:02.131627
+There were 200 tweets in the bulls tweets table at 2016-04-19 03:32:01.328556.
+There were 130 tweets in the celtics tweets table at 2016-04-19 03:32:01.328957.
+There were 164 tweets in the knicks tweets table at 2016-04-19 03:32:01.333750.
+There were 200 tweets in the lakers tweets table at 2016-04-19 03:32:01.336110.
+There were 190 tweets in the warriors tweets table at 2016-04-19 03:32:01.336362.
+Inserted 53 tweets at 2016-04-19 03:32:01.367789
+Sorted tweets at 2016-04-19 03:32:01.398698
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 03:32:01.426585
+There were 200 tweets in the bulls tweets table at 2016-04-19 03:33:01.747710.
+There were 164 tweets in the celtics tweets table at 2016-04-19 03:33:01.748965.
+There were 170 tweets in the knicks tweets table at 2016-04-19 03:33:01.749627.
+There were 200 tweets in the lakers tweets table at 2016-04-19 03:33:01.749869.
+There were 200 tweets in the warriors tweets table at 2016-04-19 03:33:01.750095.
+Inserted 54 tweets at 2016-04-19 03:33:01.778512
+Sorted tweets at 2016-04-19 03:33:01.815121
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 03:33:01.843524
+There were 200 tweets in the bulls tweets table at 2016-04-19 03:34:01.261004.
+There were 200 tweets in the celtics tweets table at 2016-04-19 03:34:01.261625.
+There were 176 tweets in the knicks tweets table at 2016-04-19 03:34:01.265266.
+There were 200 tweets in the lakers tweets table at 2016-04-19 03:34:01.265512.
+There were 200 tweets in the warriors tweets table at 2016-04-19 03:34:01.265885.
+Inserted 45 tweets at 2016-04-19 03:34:01.308932
+Sorted tweets at 2016-04-19 03:34:01.334421
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 03:34:01.361034
+There were 200 tweets in the bulls tweets table at 2016-04-19 03:35:01.775382.
+There were 200 tweets in the celtics tweets table at 2016-04-19 03:35:01.776383.
+There were 180 tweets in the knicks tweets table at 2016-04-19 03:35:01.776608.
+There were 200 tweets in the lakers tweets table at 2016-04-19 03:35:01.777078.
+There were 200 tweets in the warriors tweets table at 2016-04-19 03:35:01.780431.
+Inserted 56 tweets at 2016-04-19 03:35:01.834837
+Sorted tweets at 2016-04-19 03:35:01.887725
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 03:35:01.961159
+Deleted duplicate tweets at 2016-04-19 03:35:06.122214. It took 4 seconds.
+Posted tweets at 2016-04-19 03:35:07.848126
+There were 198 tweets in the bulls tweets table at 2016-04-19 03:36:01.335242.
+There were 118 tweets in the celtics tweets table at 2016-04-19 03:36:01.336202.
+There were 177 tweets in the knicks tweets table at 2016-04-19 03:36:01.336964.
+There were 184 tweets in the lakers tweets table at 2016-04-19 03:36:01.337195.
+There were 197 tweets in the warriors tweets table at 2016-04-19 03:36:01.337412.
+Inserted 35 tweets at 2016-04-19 03:36:01.362196
+Sorted tweets at 2016-04-19 03:36:01.399271
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 03:36:01.421169
+There were 200 tweets in the bulls tweets table at 2016-04-19 03:37:01.678467.
+There were 135 tweets in the celtics tweets table at 2016-04-19 03:37:01.680635.
+There were 183 tweets in the knicks tweets table at 2016-04-19 03:37:01.680909.
+There were 188 tweets in the lakers tweets table at 2016-04-19 03:37:01.681301.
+There were 200 tweets in the warriors tweets table at 2016-04-19 03:37:01.682031.
+Inserted 44 tweets at 2016-04-19 03:37:01.711659
+Sorted tweets at 2016-04-19 03:37:01.746556
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 03:37:01.773024
+There were 200 tweets in the bulls tweets table at 2016-04-19 03:38:02.117854.
+There were 153 tweets in the celtics tweets table at 2016-04-19 03:38:02.119261.
+There were 191 tweets in the knicks tweets table at 2016-04-19 03:38:02.122449.
+There were 190 tweets in the lakers tweets table at 2016-04-19 03:38:02.122686.
+There were 200 tweets in the warriors tweets table at 2016-04-19 03:38:02.122903.
+Inserted 33 tweets at 2016-04-19 03:38:02.144513
+Sorted tweets at 2016-04-19 03:38:02.207588
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 03:38:02.239614
+There were 200 tweets in the bulls tweets table at 2016-04-19 03:39:01.561048.
+There were 171 tweets in the celtics tweets table at 2016-04-19 03:39:01.564265.
+There were 193 tweets in the knicks tweets table at 2016-04-19 03:39:01.564963.
+There were 191 tweets in the lakers tweets table at 2016-04-19 03:39:01.567952.
+There were 200 tweets in the warriors tweets table at 2016-04-19 03:39:01.568712.
+Inserted 37 tweets at 2016-04-19 03:39:01.597161
+Sorted tweets at 2016-04-19 03:39:01.635529
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 03:39:01.663118
+There were 200 tweets in the bulls tweets table at 2016-04-19 03:40:02.135687.
+There were 191 tweets in the celtics tweets table at 2016-04-19 03:40:02.135931.
+There were 197 tweets in the knicks tweets table at 2016-04-19 03:40:02.136148.
+There were 193 tweets in the lakers tweets table at 2016-04-19 03:40:02.136377.
+There were 200 tweets in the warriors tweets table at 2016-04-19 03:40:02.138597.
+Inserted 58 tweets at 2016-04-19 03:40:02.191382
+Sorted tweets at 2016-04-19 03:40:02.226320
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 03:40:02.267314
+Deleted duplicate tweets at 2016-04-19 03:40:06.240830. It took 4 seconds.
+Posted tweets at 2016-04-19 03:40:07.604980
+There were 200 tweets in the bulls tweets table at 2016-04-19 03:41:01.441705.
+There were 150 tweets in the celtics tweets table at 2016-04-19 03:41:01.441943.
+There were 189 tweets in the knicks tweets table at 2016-04-19 03:41:01.442159.
+There were 191 tweets in the lakers tweets table at 2016-04-19 03:41:01.447897.
+There were 183 tweets in the warriors tweets table at 2016-04-19 03:41:01.448982.
+Inserted 51 tweets at 2016-04-19 03:41:01.479344
+Sorted tweets at 2016-04-19 03:41:01.516195
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 03:41:01.541640
+There were 200 tweets in the bulls tweets table at 2016-04-19 03:42:01.871756.
+There were 169 tweets in the celtics tweets table at 2016-04-19 03:42:01.872600.
+There were 194 tweets in the knicks tweets table at 2016-04-19 03:42:01.872955.
+There were 191 tweets in the lakers tweets table at 2016-04-19 03:42:01.875853.
+There were 200 tweets in the warriors tweets table at 2016-04-19 03:42:01.877360.
+Inserted 33 tweets at 2016-04-19 03:42:01.899762
+Sorted tweets at 2016-04-19 03:42:01.969245
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 03:42:01.998967
+There were 200 tweets in the bulls tweets table at 2016-04-19 03:43:01.381457.
+There were 184 tweets in the celtics tweets table at 2016-04-19 03:43:01.387737.
+There were 198 tweets in the knicks tweets table at 2016-04-19 03:43:01.388101.
+There were 193 tweets in the lakers tweets table at 2016-04-19 03:43:01.388459.
+There were 200 tweets in the warriors tweets table at 2016-04-19 03:43:01.388691.
+Inserted 54 tweets at 2016-04-19 03:43:01.430857
+Sorted tweets at 2016-04-19 03:43:01.481866
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 03:43:01.507133
+There were 200 tweets in the bulls tweets table at 2016-04-19 03:44:01.912318.
+There were 200 tweets in the celtics tweets table at 2016-04-19 03:44:01.912999.
+There were 200 tweets in the knicks tweets table at 2016-04-19 03:44:01.913891.
+There were 195 tweets in the lakers tweets table at 2016-04-19 03:44:01.917234.
+There were 200 tweets in the warriors tweets table at 2016-04-19 03:44:01.921016.
+Inserted 30 tweets at 2016-04-19 03:44:01.954745
+Sorted tweets at 2016-04-19 03:44:01.993937
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 03:44:02.041728
+There were 200 tweets in the bulls tweets table at 2016-04-19 03:45:01.504987.
+There were 200 tweets in the celtics tweets table at 2016-04-19 03:45:01.505810.
+There were 200 tweets in the knicks tweets table at 2016-04-19 03:45:01.508980.
+There were 196 tweets in the lakers tweets table at 2016-04-19 03:45:01.510424.
+There were 200 tweets in the warriors tweets table at 2016-04-19 03:45:01.510682.
+Inserted 36 tweets at 2016-04-19 03:45:01.544264
+Sorted tweets at 2016-04-19 03:45:01.598188
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 03:45:01.639855
+Deleted duplicate tweets at 2016-04-19 03:45:06.233817. It took 4 seconds.
+Posted tweets at 2016-04-19 03:45:07.041894
+There were 199 tweets in the bulls tweets table at 2016-04-19 03:46:01.441391.
+There were 146 tweets in the celtics tweets table at 2016-04-19 03:46:01.447288.
+There were 190 tweets in the knicks tweets table at 2016-04-19 03:46:01.448514.
+There were 195 tweets in the lakers tweets table at 2016-04-19 03:46:01.450760.
+There were 156 tweets in the warriors tweets table at 2016-04-19 03:46:01.452980.
+Inserted 32 tweets at 2016-04-19 03:46:01.478090
+Sorted tweets at 2016-04-19 03:46:01.535881
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 03:46:01.554149
+There were 200 tweets in the bulls tweets table at 2016-04-19 03:47:01.865014.
+There were 160 tweets in the celtics tweets table at 2016-04-19 03:47:01.866463.
+There were 198 tweets in the knicks tweets table at 2016-04-19 03:47:01.866734.
+There were 198 tweets in the lakers tweets table at 2016-04-19 03:47:01.866954.
+There were 162 tweets in the warriors tweets table at 2016-04-19 03:47:01.867169.
+Inserted 32 tweets at 2016-04-19 03:47:01.916979
+Sorted tweets at 2016-04-19 03:47:01.977880
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 03:47:02.014847
+There were 200 tweets in the bulls tweets table at 2016-04-19 03:48:01.404220.
+There were 175 tweets in the celtics tweets table at 2016-04-19 03:48:01.405194.
+There were 200 tweets in the knicks tweets table at 2016-04-19 03:48:01.409029.
+There were 200 tweets in the lakers tweets table at 2016-04-19 03:48:01.409317.
+There were 169 tweets in the warriors tweets table at 2016-04-19 03:48:01.409532.
+Inserted 30 tweets at 2016-04-19 03:48:01.435261
+Sorted tweets at 2016-04-19 03:48:01.473117
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 03:48:01.523217
+Inserted 38 tweets at 2016-04-19 03:49:02.012151
+There were 203 tweets in the bulls tweets table at 2016-04-19 03:49:02.021508.
+There were 201 tweets in the celtics tweets table at 2016-04-19 03:49:02.025013.
+There were 207 tweets in the knicks tweets table at 2016-04-19 03:49:02.025286.
+There were 200 tweets in the lakers tweets table at 2016-04-19 03:49:02.028972.
+There were 187 tweets in the warriors tweets table at 2016-04-19 03:49:02.029210.
+Sorted tweets at 2016-04-19 03:49:02.124184
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 03:49:02.159725
+There were 200 tweets in the bulls tweets table at 2016-04-19 03:50:01.573721.
+There were 200 tweets in the celtics tweets table at 2016-04-19 03:50:01.573971.
+There were 200 tweets in the knicks tweets table at 2016-04-19 03:50:01.575228.
+There were 200 tweets in the lakers tweets table at 2016-04-19 03:50:01.575615.
+There were 187 tweets in the warriors tweets table at 2016-04-19 03:50:01.576343.
+Inserted 30 tweets at 2016-04-19 03:50:01.597324
+Sorted tweets at 2016-04-19 03:50:01.654943
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 03:50:01.706141
+Deleted duplicate tweets at 2016-04-19 03:50:05.684160. It took 4 seconds.
+Posted tweets at 2016-04-19 03:50:06.203685
+There were 198 tweets in the bulls tweets table at 2016-04-19 03:51:01.901894.
+There were 164 tweets in the celtics tweets table at 2016-04-19 03:51:01.902133.
+There were 182 tweets in the knicks tweets table at 2016-04-19 03:51:01.902354.
+There were 190 tweets in the lakers tweets table at 2016-04-19 03:51:01.902591.
+There were 181 tweets in the warriors tweets table at 2016-04-19 03:51:01.909005.
+Inserted 29 tweets at 2016-04-19 03:51:01.931880
+Sorted tweets at 2016-04-19 03:51:01.989202
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 03:51:02.023479
+There were 199 tweets in the bulls tweets table at 2016-04-19 03:52:01.311097.
+There were 177 tweets in the celtics tweets table at 2016-04-19 03:52:01.312983.
+There were 191 tweets in the knicks tweets table at 2016-04-19 03:52:01.313858.
+There were 191 tweets in the lakers tweets table at 2016-04-19 03:52:01.320967.
+There were 186 tweets in the warriors tweets table at 2016-04-19 03:52:01.321217.
+Inserted 39 tweets at 2016-04-19 03:52:01.347180
+Sorted tweets at 2016-04-19 03:52:01.389695
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 03:52:01.407420
+There were 200 tweets in the bulls tweets table at 2016-04-19 03:53:01.769393.
+There were 193 tweets in the celtics tweets table at 2016-04-19 03:53:01.772625.
+There were 200 tweets in the knicks tweets table at 2016-04-19 03:53:01.775757.
+There were 194 tweets in the lakers tweets table at 2016-04-19 03:53:01.776963.
+There were 193 tweets in the warriors tweets table at 2016-04-19 03:53:01.777197.
+Inserted 24 tweets at 2016-04-19 03:53:01.799504
+Sorted tweets at 2016-04-19 03:53:01.842297
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 03:53:01.888171
+There were 200 tweets in the bulls tweets table at 2016-04-19 03:54:01.268014.
+There were 200 tweets in the celtics tweets table at 2016-04-19 03:54:01.268257.
+There were 200 tweets in the knicks tweets table at 2016-04-19 03:54:01.268616.
+There were 197 tweets in the lakers tweets table at 2016-04-19 03:54:01.268949.
+There were 196 tweets in the warriors tweets table at 2016-04-19 03:54:01.269528.
+Inserted 25 tweets at 2016-04-19 03:54:01.280199
+Sorted tweets at 2016-04-19 03:54:01.329383
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 03:54:01.358703
+There were 200 tweets in the bulls tweets table at 2016-04-19 03:55:01.882824.
+There were 200 tweets in the celtics tweets table at 2016-04-19 03:55:01.883073.
+There were 200 tweets in the knicks tweets table at 2016-04-19 03:55:01.883831.
+There were 199 tweets in the lakers tweets table at 2016-04-19 03:55:01.893038.
+There were 200 tweets in the warriors tweets table at 2016-04-19 03:55:01.893576.
+Inserted 48 tweets at 2016-04-19 03:55:01.939974
+Sorted tweets at 2016-04-19 03:55:02.076265
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 03:55:02.115140
+Deleted duplicate tweets at 2016-04-19 03:55:06.086252. It took 4 seconds.
+Posted tweets at 2016-04-19 03:55:06.445712
+Inserted 51 tweets at 2016-04-19 03:56:01.391561
+There were 206 tweets in the bulls tweets table at 2016-04-19 03:56:01.397470.
+There were 206 tweets in the celtics tweets table at 2016-04-19 03:56:01.399536.
+There were 186 tweets in the knicks tweets table at 2016-04-19 03:56:01.407328.
+There were 193 tweets in the lakers tweets table at 2016-04-19 03:56:01.407738.
+There were 204 tweets in the warriors tweets table at 2016-04-19 03:56:01.407967.
+Sorted tweets at 2016-04-19 03:56:01.476483
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 03:56:01.524737
+Restarted tweet engine at 2016.04.19-03:57:01
+There were 0 tweets in the bulls tweets table at 2016-04-19 03:57:01.409964.
+There were 0 tweets in the celtics tweets table at 2016-04-19 03:57:01.410206.
+There were 0 tweets in the knicks tweets table at 2016-04-19 03:57:01.410423.
+There were 0 tweets in the lakers tweets table at 2016-04-19 03:57:01.411100.
+There were 0 tweets in the warriors tweets table at 2016-04-19 03:57:01.412982.
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 03:57:01.430096
+Inserted 33 tweets at 2016-04-19 03:57:01.452613
+There were 1 tweets in the bulls tweets table at 2016-04-19 03:58:01.733088.
+There were 12 tweets in the celtics tweets table at 2016-04-19 03:58:01.737037.
+There were 7 tweets in the knicks tweets table at 2016-04-19 03:58:01.738372.
+There were 1 tweets in the lakers tweets table at 2016-04-19 03:58:01.738574.
+There were 12 tweets in the warriors tweets table at 2016-04-19 03:58:01.738761.
+Inserted 41 tweets at 2016-04-19 03:58:01.783785
+There were 2 tweets in the bulls tweets table at 2016-04-19 03:59:02.076138.
+There were 23 tweets in the celtics tweets table at 2016-04-19 03:59:02.076381.
+There were 10 tweets in the knicks tweets table at 2016-04-19 03:59:02.076605.
+There were 7 tweets in the lakers tweets table at 2016-04-19 03:59:02.076830.
+There were 32 tweets in the warriors tweets table at 2016-04-19 03:59:02.077086.
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 03:59:02.229854
+There were 2 tweets in the bulls tweets table at 2016-04-19 04:00:01.472998.
+There were 23 tweets in the celtics tweets table at 2016-04-19 04:00:01.473211.
+There were 10 tweets in the knicks tweets table at 2016-04-19 04:00:01.473395.
+There were 7 tweets in the lakers tweets table at 2016-04-19 04:00:01.481832.
+There were 32 tweets in the warriors tweets table at 2016-04-19 04:00:01.482062.
+Inserted 100 tweets at 2016-04-19 04:00:01.528379
+Deleted duplicate tweets at 2016-04-19 04:00:01.599492. It took 0 seconds.
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 04:00:01.655481
+Posted tweets at 2016-04-19 04:00:03.263322
+There were 7 tweets in the bulls tweets table at 2016-04-19 04:01:01.995397.
+There were 44 tweets in the celtics tweets table at 2016-04-19 04:01:01.996428.
+There were 24 tweets in the knicks tweets table at 2016-04-19 04:01:01.997515.
+There were 14 tweets in the lakers tweets table at 2016-04-19 04:01:01.998204.
+There were 59 tweets in the warriors tweets table at 2016-04-19 04:01:01.998844.
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 04:01:02.005560
+Inserted 46 tweets at 2016-04-19 04:01:02.045822
+There were 14 tweets in the bulls tweets table at 2016-04-19 04:02:01.456564.
+There were 53 tweets in the celtics tweets table at 2016-04-19 04:02:01.458256.
+There were 34 tweets in the knicks tweets table at 2016-04-19 04:02:01.458766.
+There were 18 tweets in the lakers tweets table at 2016-04-19 04:02:01.459933.
+There were 75 tweets in the warriors tweets table at 2016-04-19 04:02:01.460139.
+Inserted 40 tweets at 2016-04-19 04:02:01.484298
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 04:02:01.494716
+Sorted tweets at 2016-04-19 04:02:01.501004
+There were 17 tweets in the bulls tweets table at 2016-04-19 04:03:01.920981.
+There were 67 tweets in the celtics tweets table at 2016-04-19 04:03:01.921206.
+There were 38 tweets in the knicks tweets table at 2016-04-19 04:03:01.921398.
+There were 20 tweets in the lakers tweets table at 2016-04-19 04:03:01.921580.
+There were 92 tweets in the warriors tweets table at 2016-04-19 04:03:01.925017.
+Inserted 78 tweets at 2016-04-19 04:03:01.985596
+Sorted tweets at 2016-04-19 04:03:01.987104
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 04:03:01.990274
+There were 19 tweets in the bulls tweets table at 2016-04-19 04:04:01.541020.
+There were 126 tweets in the celtics tweets table at 2016-04-19 04:04:01.541417.
+There were 43 tweets in the knicks tweets table at 2016-04-19 04:04:01.543323.
+There were 23 tweets in the lakers tweets table at 2016-04-19 04:04:01.545014.
+There were 101 tweets in the warriors tweets table at 2016-04-19 04:04:01.545236.
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 04:04:01.592400
+Inserted 77 tweets at 2016-04-19 04:04:01.597558
+Sorted tweets at 2016-04-19 04:04:01.602335
+There were 25 tweets in the bulls tweets table at 2016-04-19 04:05:01.361783.
+There were 170 tweets in the celtics tweets table at 2016-04-19 04:05:01.363843.
+There were 48 tweets in the knicks tweets table at 2016-04-19 04:05:01.365146.
+There were 24 tweets in the lakers tweets table at 2016-04-19 04:05:01.368294.
+There were 122 tweets in the warriors tweets table at 2016-04-19 04:05:01.368719.
+Inserted 57 tweets at 2016-04-19 04:05:01.418593
+Sorted tweets at 2016-04-19 04:05:01.428087
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 04:05:01.447478
+Deleted duplicate tweets at 2016-04-19 04:05:03.403076. It took 2 seconds.
+Posted tweets at 2016-04-19 04:05:04.290676
+There were 27 tweets in the bulls tweets table at 2016-04-19 04:06:01.618455.
+There were 120 tweets in the celtics tweets table at 2016-04-19 04:06:01.619178.
+There were 40 tweets in the knicks tweets table at 2016-04-19 04:06:01.619543.
+There were 17 tweets in the lakers tweets table at 2016-04-19 04:06:01.619942.
+There were 73 tweets in the warriors tweets table at 2016-04-19 04:06:01.620324.
+Inserted 37 tweets at 2016-04-19 04:06:01.663115
+Sorted tweets at 2016-04-19 04:06:01.664783
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 04:06:01.676695
+There were 30 tweets in the bulls tweets table at 2016-04-19 04:07:01.245354.
+There were 138 tweets in the celtics tweets table at 2016-04-19 04:07:01.245818.
+There were 44 tweets in the knicks tweets table at 2016-04-19 04:07:01.246392.
+There were 17 tweets in the lakers tweets table at 2016-04-19 04:07:01.247427.
+There were 85 tweets in the warriors tweets table at 2016-04-19 04:07:01.249701.
+Inserted 33 tweets at 2016-04-19 04:07:01.267230
+Sorted tweets at 2016-04-19 04:07:01.290808
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 04:07:01.295091
+There were 32 tweets in the bulls tweets table at 2016-04-19 04:08:01.840603.
+There were 157 tweets in the celtics tweets table at 2016-04-19 04:08:01.840954.
+There were 51 tweets in the knicks tweets table at 2016-04-19 04:08:01.842902.
+There were 17 tweets in the lakers tweets table at 2016-04-19 04:08:01.844941.
+There were 90 tweets in the warriors tweets table at 2016-04-19 04:08:01.845666.
+Inserted 35 tweets at 2016-04-19 04:08:01.872474
+Sorted tweets at 2016-04-19 04:08:01.899224
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 04:08:01.908982
+There were 34 tweets in the bulls tweets table at 2016-04-19 04:09:01.576776.
+There were 168 tweets in the celtics tweets table at 2016-04-19 04:09:01.581776.
+There were 61 tweets in the knicks tweets table at 2016-04-19 04:09:01.582373.
+There were 21 tweets in the lakers tweets table at 2016-04-19 04:09:01.582954.
+There were 98 tweets in the warriors tweets table at 2016-04-19 04:09:01.584970.
+Inserted 34 tweets at 2016-04-19 04:09:01.615781
+Sorted tweets at 2016-04-19 04:09:01.637167
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 04:09:01.652976
+There were 36 tweets in the bulls tweets table at 2016-04-19 04:10:01.929039.
+There were 185 tweets in the celtics tweets table at 2016-04-19 04:10:01.929438.
+There were 64 tweets in the knicks tweets table at 2016-04-19 04:10:01.929648.
+There were 23 tweets in the lakers tweets table at 2016-04-19 04:10:01.929838.
+There were 108 tweets in the warriors tweets table at 2016-04-19 04:10:01.930042.
+Inserted 47 tweets at 2016-04-19 04:10:02.015869
+Sorted tweets at 2016-04-19 04:10:02.021745
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 04:10:02.102687
+Deleted duplicate tweets at 2016-04-19 04:10:03.431515. It took 1 seconds.
+Posted tweets at 2016-04-19 04:10:04.207404
+There were 50 tweets in the bulls tweets table at 2016-04-19 04:11:01.655023.
+There were 152 tweets in the celtics tweets table at 2016-04-19 04:11:01.657020.
+There were 62 tweets in the knicks tweets table at 2016-04-19 04:11:01.657262.
+There were 24 tweets in the lakers tweets table at 2016-04-19 04:11:01.657451.
+There were 82 tweets in the warriors tweets table at 2016-04-19 04:11:01.657645.
+Inserted 32 tweets at 2016-04-19 04:11:01.696804
+Sorted tweets at 2016-04-19 04:11:01.704050
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 04:11:01.721338
+There were 51 tweets in the bulls tweets table at 2016-04-19 04:12:01.392993.
+There were 167 tweets in the celtics tweets table at 2016-04-19 04:12:01.393749.
+There were 69 tweets in the knicks tweets table at 2016-04-19 04:12:01.394163.
+There were 27 tweets in the lakers tweets table at 2016-04-19 04:12:01.396020.
+There were 88 tweets in the warriors tweets table at 2016-04-19 04:12:01.397259.
+Inserted 42 tweets at 2016-04-19 04:12:01.422724
+Sorted tweets at 2016-04-19 04:12:01.447065
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 04:12:01.452976
+There were 54 tweets in the bulls tweets table at 2016-04-19 04:13:01.271890.
+There were 182 tweets in the celtics tweets table at 2016-04-19 04:13:01.272130.
+There were 88 tweets in the knicks tweets table at 2016-04-19 04:13:01.272332.
+There were 27 tweets in the lakers tweets table at 2016-04-19 04:13:01.272523.
+There were 93 tweets in the warriors tweets table at 2016-04-19 04:13:01.272720.
+Inserted 37 tweets at 2016-04-19 04:13:01.301877
+Sorted tweets at 2016-04-19 04:13:01.326888
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 04:13:01.334840
+There were 55 tweets in the bulls tweets table at 2016-04-19 04:14:02.087409.
+There were 192 tweets in the celtics tweets table at 2016-04-19 04:14:02.088616.
+There were 103 tweets in the knicks tweets table at 2016-04-19 04:14:02.092331.
+There were 30 tweets in the lakers tweets table at 2016-04-19 04:14:02.092546.
+There were 101 tweets in the warriors tweets table at 2016-04-19 04:14:02.092758.
+Inserted 70 tweets at 2016-04-19 04:14:02.135820
+Sorted tweets at 2016-04-19 04:14:02.154318
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 04:14:02.167114
+There were 58 tweets in the bulls tweets table at 2016-04-19 04:15:02.010212.
+There were 200 tweets in the celtics tweets table at 2016-04-19 04:15:02.010469.
+There were 113 tweets in the knicks tweets table at 2016-04-19 04:15:02.014400.
+There were 32 tweets in the lakers tweets table at 2016-04-19 04:15:02.014648.
+There were 145 tweets in the warriors tweets table at 2016-04-19 04:15:02.014859.
+Inserted 45 tweets at 2016-04-19 04:15:02.072691
+Sorted tweets at 2016-04-19 04:15:02.092015
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 04:15:02.123975
+Deleted duplicate tweets at 2016-04-19 04:15:04.059129. It took 2 seconds.
+Posted tweets at 2016-04-19 04:15:04.997411
+There were 52 tweets in the bulls tweets table at 2016-04-19 04:16:01.265108.
+There were 175 tweets in the celtics tweets table at 2016-04-19 04:16:01.265499.
+There were 91 tweets in the knicks tweets table at 2016-04-19 04:16:01.266966.
+There were 28 tweets in the lakers tweets table at 2016-04-19 04:16:01.269905.
+There were 114 tweets in the warriors tweets table at 2016-04-19 04:16:01.270907.
+Inserted 34 tweets at 2016-04-19 04:16:01.295993
+Sorted tweets at 2016-04-19 04:16:01.324519
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 04:16:01.339809
+There were 53 tweets in the bulls tweets table at 2016-04-19 04:17:02.122266.
+There were 189 tweets in the celtics tweets table at 2016-04-19 04:17:02.123316.
+There were 96 tweets in the knicks tweets table at 2016-04-19 04:17:02.123764.
+There were 31 tweets in the lakers tweets table at 2016-04-19 04:17:02.124212.
+There were 125 tweets in the warriors tweets table at 2016-04-19 04:17:02.124541.
+Inserted 29 tweets at 2016-04-19 04:17:02.149536
+Sorted tweets at 2016-04-19 04:17:02.176391
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 04:17:02.186746
+There were 57 tweets in the bulls tweets table at 2016-04-19 04:18:01.994473.
+There were 195 tweets in the celtics tweets table at 2016-04-19 04:18:01.996122.
+There were 103 tweets in the knicks tweets table at 2016-04-19 04:18:01.996354.
+There were 34 tweets in the lakers tweets table at 2016-04-19 04:18:01.996554.
+There were 134 tweets in the warriors tweets table at 2016-04-19 04:18:01.996955.
+Inserted 33 tweets at 2016-04-19 04:18:02.048961
+Sorted tweets at 2016-04-19 04:18:02.076710
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 04:18:02.101508
+There were 60 tweets in the bulls tweets table at 2016-04-19 04:19:01.892778.
+There were 200 tweets in the celtics tweets table at 2016-04-19 04:19:01.895014.
+There were 108 tweets in the knicks tweets table at 2016-04-19 04:19:01.899911.
+There were 35 tweets in the lakers tweets table at 2016-04-19 04:19:01.901758.
+There were 143 tweets in the warriors tweets table at 2016-04-19 04:19:01.902001.
+Inserted 31 tweets at 2016-04-19 04:19:01.930270
+Sorted tweets at 2016-04-19 04:19:01.973990
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 04:19:02.010842
+There were 63 tweets in the bulls tweets table at 2016-04-19 04:20:01.917715.
+There were 200 tweets in the celtics tweets table at 2016-04-19 04:20:01.918461.
+There were 116 tweets in the knicks tweets table at 2016-04-19 04:20:01.918711.
+There were 35 tweets in the lakers tweets table at 2016-04-19 04:20:01.921321.
+There were 150 tweets in the warriors tweets table at 2016-04-19 04:20:01.922127.
+Inserted 37 tweets at 2016-04-19 04:20:01.939074
+Sorted tweets at 2016-04-19 04:20:01.999735
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 04:20:02.016011
+Deleted duplicate tweets at 2016-04-19 04:20:03.946745. It took 2 seconds.
+Posted tweets at 2016-04-19 04:20:04.531315
+There were 68 tweets in the bulls tweets table at 2016-04-19 04:21:02.171144.
+There were 176 tweets in the celtics tweets table at 2016-04-19 04:21:02.172121.
+There were 103 tweets in the knicks tweets table at 2016-04-19 04:21:02.173376.
+There were 32 tweets in the lakers tweets table at 2016-04-19 04:21:02.174855.
+There were 133 tweets in the warriors tweets table at 2016-04-19 04:21:02.176981.
+Inserted 31 tweets at 2016-04-19 04:21:02.200241
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 04:21:02.231519
+Sorted tweets at 2016-04-19 04:21:02.231991
+There were 69 tweets in the bulls tweets table at 2016-04-19 04:22:02.020298.
+There were 183 tweets in the celtics tweets table at 2016-04-19 04:22:02.020544.
+There were 113 tweets in the knicks tweets table at 2016-04-19 04:22:02.020755.
+There were 37 tweets in the lakers tweets table at 2016-04-19 04:22:02.024992.
+There were 141 tweets in the warriors tweets table at 2016-04-19 04:22:02.025226.
+Inserted 31 tweets at 2016-04-19 04:22:02.054900
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 04:22:02.094320
+Sorted tweets at 2016-04-19 04:22:02.098681
+There were 72 tweets in the bulls tweets table at 2016-04-19 04:23:01.899822.
+There were 195 tweets in the celtics tweets table at 2016-04-19 04:23:01.900095.
+There were 116 tweets in the knicks tweets table at 2016-04-19 04:23:01.900482.
+There were 41 tweets in the lakers tweets table at 2016-04-19 04:23:01.901040.
+There were 150 tweets in the warriors tweets table at 2016-04-19 04:23:01.902116.
+Inserted 33 tweets at 2016-04-19 04:23:01.945510
+Sorted tweets at 2016-04-19 04:23:01.981395
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 04:23:02.017823
+There were 74 tweets in the bulls tweets table at 2016-04-19 04:24:01.891994.
+There were 200 tweets in the celtics tweets table at 2016-04-19 04:24:01.892972.
+There were 121 tweets in the knicks tweets table at 2016-04-19 04:24:01.895082.
+There were 44 tweets in the lakers tweets table at 2016-04-19 04:24:01.895289.
+There were 158 tweets in the warriors tweets table at 2016-04-19 04:24:01.895937.
+Inserted 23 tweets at 2016-04-19 04:24:01.930237
+Sorted tweets at 2016-04-19 04:24:01.957487
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 04:24:01.973045
+There were 74 tweets in the bulls tweets table at 2016-04-19 04:25:02.149736.
+There were 200 tweets in the celtics tweets table at 2016-04-19 04:25:02.149995.
+There were 125 tweets in the knicks tweets table at 2016-04-19 04:25:02.152988.
+There were 46 tweets in the lakers tweets table at 2016-04-19 04:25:02.153237.
+There were 166 tweets in the warriors tweets table at 2016-04-19 04:25:02.153460.
+Sorted tweets at 2016-04-19 04:25:02.184404
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 04:25:02.219360
+Inserted 26 tweets at 2016-04-19 04:25:02.233965
+Deleted duplicate tweets at 2016-04-19 04:25:04.358122. It took 2 seconds.
+Posted tweets at 2016-04-19 04:25:05.385080
+There were 78 tweets in the bulls tweets table at 2016-04-19 04:26:01.571162.
+There were 183 tweets in the celtics tweets table at 2016-04-19 04:26:01.571414.
+There were 117 tweets in the knicks tweets table at 2016-04-19 04:26:01.571628.
+There were 48 tweets in the lakers tweets table at 2016-04-19 04:26:01.571822.
+There were 152 tweets in the warriors tweets table at 2016-04-19 04:26:01.572031.
+Inserted 29 tweets at 2016-04-19 04:26:01.597837
+Sorted tweets at 2016-04-19 04:26:01.633882
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 04:26:01.651590
+Inserted 28 tweets at 2016-04-19 04:27:01.645041
+There were 83 tweets in the bulls tweets table at 2016-04-19 04:27:01.652654.
+There were 203 tweets in the celtics tweets table at 2016-04-19 04:27:01.656041.
+There were 126 tweets in the knicks tweets table at 2016-04-19 04:27:01.656625.
+There were 53 tweets in the lakers tweets table at 2016-04-19 04:27:01.657098.
+There were 170 tweets in the warriors tweets table at 2016-04-19 04:27:01.657799.
+Sorted tweets at 2016-04-19 04:27:01.687392
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 04:27:01.703927
+There were 83 tweets in the bulls tweets table at 2016-04-19 04:28:01.629018.
+There were 200 tweets in the celtics tweets table at 2016-04-19 04:28:01.629268.
+There were 126 tweets in the knicks tweets table at 2016-04-19 04:28:01.629479.
+There were 53 tweets in the lakers tweets table at 2016-04-19 04:28:01.629676.
+There were 170 tweets in the warriors tweets table at 2016-04-19 04:28:01.629892.
+Inserted 34 tweets at 2016-04-19 04:28:01.653832
+Sorted tweets at 2016-04-19 04:28:01.690392
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 04:28:01.700909
+There were 88 tweets in the bulls tweets table at 2016-04-19 04:29:01.667508.
+There were 200 tweets in the celtics tweets table at 2016-04-19 04:29:01.667762.
+There were 130 tweets in the knicks tweets table at 2016-04-19 04:29:01.669236.
+There were 60 tweets in the lakers tweets table at 2016-04-19 04:29:01.670359.
+There were 176 tweets in the warriors tweets table at 2016-04-19 04:29:01.670601.
+Inserted 24 tweets at 2016-04-19 04:29:01.687849
+Sorted tweets at 2016-04-19 04:29:01.729069
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 04:29:01.741933
+There were 90 tweets in the bulls tweets table at 2016-04-19 04:30:01.806954.
+There were 200 tweets in the celtics tweets table at 2016-04-19 04:30:01.807711.
+There were 135 tweets in the knicks tweets table at 2016-04-19 04:30:01.813170.
+There were 62 tweets in the lakers tweets table at 2016-04-19 04:30:01.816585.
+There were 184 tweets in the warriors tweets table at 2016-04-19 04:30:01.816872.
+Inserted 22 tweets at 2016-04-19 04:30:01.839463
+Sorted tweets at 2016-04-19 04:30:01.888511
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 04:30:01.919919
+Deleted duplicate tweets at 2016-04-19 04:30:04.286274. It took 2 seconds.
+Posted tweets at 2016-04-19 04:30:05.525837
+There were 90 tweets in the bulls tweets table at 2016-04-19 04:31:01.501439.
+There were 184 tweets in the celtics tweets table at 2016-04-19 04:31:01.503158.
+There were 135 tweets in the knicks tweets table at 2016-04-19 04:31:01.504160.
+There were 50 tweets in the lakers tweets table at 2016-04-19 04:31:01.504368.
+There were 175 tweets in the warriors tweets table at 2016-04-19 04:31:01.504582.
+Inserted 25 tweets at 2016-04-19 04:31:01.523997
+Sorted tweets at 2016-04-19 04:31:01.557712
+Deleted tweets 'MySQLCursor: DELETE FROM warriors_tweets  W..' at 2016-04-19 04:31:01.574063

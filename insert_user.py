@@ -11,7 +11,7 @@ def insert_user(email, password):
 	try:
 		cursor.execute(query)
 		cnx.commit()
-        cnx.close()		
-		return 1
+		cnx.close()		
+		return '1'
 	except:
-		return 0
+		return '0'
