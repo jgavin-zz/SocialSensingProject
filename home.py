@@ -9,6 +9,7 @@ from fetch_top_tweets import fetch_top_tweets
 from fetch_all_tweets import fetch_all_tweets
 from update_retweets import update_retweets
 from insert_user import insert_user
+from validate_user import validate_user
 import requests
 import json
 import datetime
@@ -59,6 +60,12 @@ def register_user():
 	email = request.form.get('email')
 	password = request.form.get('password')
 	return insert_user(email, password)
+	
+@app.route('/login_user', methods = ['POST']) 
+def login_user():   
+	email = request.form.get('email')
+	password = request.form.get('password')
+	return validate_user(email, password)
 
 @app.route('/forgot')
 def forgot():
