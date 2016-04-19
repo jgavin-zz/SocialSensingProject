@@ -9,13 +9,13 @@ def validate_user(email, psw):
 	cursor = cnx.cursor()
 	
 	#Check if user exists
-	query = ('select username from users')
+	query = ('select username from users;')
 	cursor.execute(query)
-	users = []
 	
 	exists = 0
 	for (username) in cursor:
 		user = str(''.join(username))
+		return user
 		if user == str(email):
 			exists = 1
 			break
