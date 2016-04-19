@@ -13,11 +13,14 @@ def validate_user(email, psw):
 	cursor.execute(query)
 	
 	exists = 0
+	users = ''
 	for (username) in cursor:
 		user = str(''.join(username))
+		users = users + user + ''
 		if user == str(email):
 			exists = 1
 			break
+	return users
 		
 	if exists == 1:	
 		query = ("select password from users where username = '" + str(email) + "';")
