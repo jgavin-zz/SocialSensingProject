@@ -65,7 +65,8 @@ def register_user():
 def login_user():   
 	email = request.form.get('email')
 	password = request.form.get('password')
-	return validate_user(email, password)
+	#return validate_user(email, password)
+	return str(email) + ' ' + str(password)
 
 @app.route('/forgot')
 def forgot():
