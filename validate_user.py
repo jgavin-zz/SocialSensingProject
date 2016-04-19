@@ -25,6 +25,7 @@ def validate_user(email, psw):
 	if exists == 1:	
 		query = ("select password from users where username = '" + str(email) + "';")
 		cursor.execute(query)
+		return query
 		cnx.commit()
 		cnx.close()
 		right_password = 0
