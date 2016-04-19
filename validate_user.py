@@ -20,9 +20,9 @@ def validate_user(email, psw):
 		if user == str(email):
 			exists = 1
 			break
-	#return users
 		
 	if exists == 1:	
+		return "Found user"
 		query = ("select password from users where username = '" + str(email) + "';")
 		cursor.execute(query)
 		return query
