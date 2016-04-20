@@ -21,8 +21,7 @@ def insert_preferences(email, virality, time, relevance):
 			break
 		
 	if exists == 1:
-		query = ("UPDATE preferences SET virality=" + str(virality) + ", time =" +  str(time) +  ", relevance =" + str(relevance) + " where id='" + email + "';")
-		return query
+		query = ("UPDATE preferences SET virality=" + str(virality) + ", time =" +  str(time) +  ", relevance =" + str(relevance) + " where username='" + email + "';")
 		try:
 			cursor.execute(query)
 			cnx.commit()
