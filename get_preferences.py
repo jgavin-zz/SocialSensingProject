@@ -17,3 +17,4 @@ def get_preferences(email):
 		t = str(time)
 		r = str(relevance)
 	print v, t, r
+	return v, t, r
