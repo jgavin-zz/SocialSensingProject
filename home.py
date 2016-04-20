@@ -74,7 +74,6 @@ def register_user():
 	return insert_user(email, password)
 	
 @app.route('/login_user', methods = ['POST']) 
-
 def login_user():   
 	email = request.form.get('email')
 	password = request.form.get('password')
@@ -84,6 +83,7 @@ def login_user():
 	else:
 		return "Login failed"
 
-@app.route('/forgot')
-def forgot():
-    return render_template('forgot.html')
+@app.route('/logout') 
+def logout():   
+	session.clear()
+	return redirect(url_for('login'))
