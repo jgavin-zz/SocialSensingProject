@@ -25,6 +25,6 @@ def insert_user(email, password):
 		cursor.execute(query)
 		cnx.commit()
 		cnx.close()		
-		return 'Registered successfully'
+		return 1
 	except Error as e:		
-		return "mysql error: %s" % e
+		return 0

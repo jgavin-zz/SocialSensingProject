@@ -71,7 +71,10 @@ def register():
 def register_user():   
 	email = request.form.get('email')
 	password = request.form.get('password')
-	return insert_user(email, password)
+	if insert_user(email, password):
+		render_template('message.html', message = "Registered Successfully")
+	else:
+		render_template('message.html', message = "Registration Failed")
 	
 @app.route('/login_user', methods = ['POST']) 
 def login_user():   
@@ -81,7 +84,7 @@ def login_user():
 		session['key'] = str(email)
 		return redirect(url_for('home'))
 	else:
-		return "Login failed"
+		render_template('message.html', message = "Login Failed")
 
 @app.route('/logout') 
 def logout():   
