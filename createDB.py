@@ -62,6 +62,10 @@ cursor.execute(dropTableQuery)
 dropTableQuery = ("DROP TABLE IF EXISTS users")
 cursor.execute(dropTableQuery)
 
+#Preferences
+dropTableQuery = ("DROP TABLE IF EXISTS preferences")
+cursor.execute(dropTableQuery)
+
 ########################
 ## Create tables next ##
 ########################
@@ -179,6 +183,21 @@ createTableQuery = ('''CREATE TABLE users (
                                                 PRIMARY KEY(username)
                                           );'''
                     )
+cursor.execute(createTableQuery)
+
+
+#Preferences
+createTableQuery = ('''CREATE TABLE preferences (
+                                           	username VARCHAR(100) NOT NULL,
+                                           	virality INT DEFAULT 0,
+                                           	time INT DEFAULT 0,
+                                           	relevance INT DEFAULT 0,
+                                           	FOREIGN KEY(username)
+                                            REFERENCES users(username)
+                                            ON DELETE CASCADE
+						
+                                          );'''
+                   )
 cursor.execute(createTableQuery)
 
 #Commit the data and close the connection to MySQL
