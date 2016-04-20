@@ -3,6 +3,7 @@ from flask.ext.cache import Cache
 from flask import render_template
 from flask.ext.twitter_oembedder import TwitterOEmbedder
 from flask import request
+from flask import session
 import tweepy
 from tweepy import OAuthHandler
 from fetch_top_tweets import fetch_top_tweets	
@@ -14,6 +15,7 @@ import requests
 import json
 import datetime
 app = Flask(__name__)
+app.secret_key = 'F12Zr47j\3yX R~X@H!jmM]Lwf/,?KT'
 
 cache = Cache(app, config={'CACHE_TYPE': 'simple'})
 twitter_oembedder = TwitterOEmbedder(app,cache,debug=True)
@@ -25,7 +27,8 @@ app.config['TWITTER_TOKEN_SECRET'] = 'YsLyHMKLoUl47cCge1sBb7KfjDhg2wBbjWhBWm4VVO
 @app.route('/')
 @app.route('/teams/')
 def home():
-    return render_template('home.html')
+	return session['name']
+    #return render_template('home.html')
     
 @app.route('/teams/<team_name>/')
 def team_name(team_name):
@@ -65,8 +68,13 @@ def register_user():
 def login_user():   
 	email = request.form.get('email')
 	password = request.form.get('password')
+	if validate_user(email, password):
+		session['name'] = str(email)
+		return redirect(url_for('/'))
+	else:
+		return "Login failed"
 	#return validate_user(email, password)
-	return str(email) + ' ' + str(password)
+	#return str(email) + ' ' + str(password)
 
 @app.route('/forgot')
 def forgot():

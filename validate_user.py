@@ -38,8 +38,11 @@ def validate_user(email, psw):
 			if str(psw) == p:
 				right_password = 1
 		if right_password == 1:
-			return "Logged in successfully"
+			#return "Logged in successfully"
+			return 1
 		else:
-			return "Wrong Password"
+			#return "Wrong Password"
+			return 0
 	else:
-		return "User does not exist"
+		#return "User does not exist"
+		return 0
