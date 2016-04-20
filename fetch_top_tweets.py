@@ -17,13 +17,14 @@ def fetch_top_tweets(team_name, email):
 		tweet = {'id': id, 'distance': distance, 'retweets': retweets, 'date_tweeted': date_tweeted}
 		tweets.append(tweet)
 		
-	sorted_by_virality = tweets.sort(key=lambda x: x['retweets'], reverse=False)
-	sorted_by_time = tweets.sort(key=lambda x: x['date_tweeted'], reverse=False)
-	sorted_by_relevance = tweets.sort(key=lambda x: x['distance'], reverse=False)
+	#sorted_by_virality = tweets.sort(key=lambda x: x['retweets'], reverse=False)
+	#sorted_by_time = tweets.sort(key=lambda x: x['date_tweeted'], reverse=False)
+	#sorted_by_relevance = tweets.sort(key=lambda x: x['distance'], reverse=False)
+	tweets.sort(key=lambda x: x['retweets'], reverse=False)
 	
 	virality, time, relevance = get_preferences(email)
 	
-	for tweet in sorted_by_virality:
+	for tweet in tweets:
 		print tweet['retweets']
 		
 	cnx.commit()
