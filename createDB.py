@@ -58,12 +58,12 @@ cursor.execute(dropTableQuery)
 dropTableQuery = ("DROP TABLE IF EXISTS warriors_top")
 cursor.execute(dropTableQuery)
 
-#Users
-dropTableQuery = ("DROP TABLE IF EXISTS users")
-cursor.execute(dropTableQuery)
-
 #Preferences
 dropTableQuery = ("DROP TABLE IF EXISTS preferences")
+cursor.execute(dropTableQuery)
+
+#Users
+dropTableQuery = ("DROP TABLE IF EXISTS users")
 cursor.execute(dropTableQuery)
 
 ########################
