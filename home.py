@@ -12,6 +12,7 @@ from fetch_all_tweets import fetch_all_tweets
 from update_retweets import update_retweets
 from insert_user import insert_user
 from validate_user import validate_user
+from insert_preferences import insert_preferences
 import requests
 import json
 import datetime
