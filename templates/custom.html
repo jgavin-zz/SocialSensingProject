@@ -118,6 +118,19 @@
 					document.getElementById("demo3").innerHTML = str.bold() + str2 + str3.bold() + str4;
 				}
 		    }
+		    $('document').ready(function(){
+		    	document.getElementById("virality").style.visibility = "hidden";
+		    	document.getElementById("time").style.visibility = "hidden";
+		    	document.getElementById("relevance").style.visibility = "hidden";
+		    	
+		    	var virality = document.getElementById("virality").text;
+		    	var time = document.getElementById("time").text;
+		    	var relevance = document.getElementById("relevance").text;
+		    	
+		    	alert(relevance);
+		    	
+		    	    
+		    });
 		</script>
 	</head>
 
