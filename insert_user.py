@@ -24,6 +24,7 @@ def insert_user(email, password):
 	try:
 		cursor.execute(query)
 		query = ("INSERT IGNORE INTO preferences VALUES ('" + str(email) + "', 0, 0, 0);")
+		cursor.execute(query)
 		cnx.commit()
 		cnx.close()		
 		return 1
