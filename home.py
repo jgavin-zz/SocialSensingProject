@@ -13,6 +13,7 @@ from update_retweets import update_retweets
 from insert_user import insert_user
 from validate_user import validate_user
 from insert_preferences import insert_preferences
+from get_preferences import get_preferences
 import requests
 import json
 import datetime
@@ -95,6 +96,7 @@ def logout():
 @app.route('/customize')
 def customize():
 	if 'key' in session:
+		virality, time, relevance = get_preferences(session['key'])
 		return render_template('custom.html')
 	else:
 		return redirect(url_for('login'))
