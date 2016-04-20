@@ -34,5 +34,5 @@ if __name__ == '__main__':
 	cnx.commit()
 	cnx.close()
 	logfile = open("/var/www/SocialSensingProject/log.txt", 'a')
-    logfile.write("Updated tweet scores at " + str(datetime.datetime.now())+ '\n')
-    logfile.close()
+	logfile.write("Updated tweet scores at " + str(datetime.datetime.now())+ '\n')
+	logfile.close()
