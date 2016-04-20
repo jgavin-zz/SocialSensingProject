@@ -95,7 +95,6 @@ class TweetListener(StreamListener):
 			score = '1002'
 			
 			query = ("INSERT IGNORE INTO " + team_name + "_tweets (id, text, distance, date_inserted, date_tweeted, retweets, username, score, virality_rank, time_rank, relevance_rank) VALUES (" + str(status.id) + ',"' + status.text + '",' + str(min_distance) + ",CURRENT_TIMESTAMP, STR_TO_DATE('" + tweet_time + "', '%Y-%m-%d %h:%i'" + "), " + retweets + ", '" + username + "', " + score + ", " + virality_rank + ", " + time_rank + ", " + relevance_rank + " );" + "\n")
-			print query
 			logfile = open("/var/www/SocialSensingProject/tweets.txt", 'a')
 			logfile.write(query)
 			logfile.close()
