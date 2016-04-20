@@ -17,7 +17,7 @@ def fetch_top_tweets(team_name, email):
 		tweet = {'id': id, 'distance': distance, 'retweets': retweets, 'date_tweeted': date_tweeted}
 		tweets.append(tweet)
 
-	tweets.sort(key=lambda x: x['retweets'], reverse=True)
+	tweets.sort(key=lambda x: x['retweets'], reverse=False)
 	
 	count = 1	
 	iterations = 1
@@ -27,7 +27,6 @@ def fetch_top_tweets(team_name, email):
 			iterations = iterations + 1
 			last_score = tweet['retweets']
 			tweet['virality_rank'] = count
-			continue
 		elif tweet['retweets'] == last_score:
 			tweet['virality_rank'] = count
 		else:
