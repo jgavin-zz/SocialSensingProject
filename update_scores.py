@@ -1,6 +1,5 @@
 import mysql.connector
 import datetime
-from compute_score import compute_score 
 
 if __name__ == '__main__':
 	cnx = mysql.connector.connect(user='root', password='bob',
@@ -13,20 +12,83 @@ if __name__ == '__main__':
 	teams = ['bulls', 'celtics', 'lakers', 'knicks', 'warriors']
 	for team_name in teams:
 
-		tweets = []
-		query = ('select id, distance, retweets, likes, date_tweeted, username from ' + team_name.lower() + '_tweets;')
+		query = ('select id, distance, retweets, date_tweeted from ' + team_name.lower() + '_tweets;')
 		cursor.execute(query)
-		count = 1
-		new_scores = []
-		for (id, distance, retweets, likes, time_tweeted, username) in cursor:
-			new_score = {'id': id, 'score': compute_score(distance, retweets, likes, time_tweeted, username, team_name)}
-			new_scores.append(new_score)	
+	
+	
+		tweets = []
+		for (id, distance, retweets, date_tweeted) in cursor:
+			tweet = {'id': id, 'distance': distance, 'retweets': retweets, 'date_tweeted': date_tweeted}
+			tweets.append(tweet)
+
+
+		#Compute virality ranks
+		tweets.sort(key=lambda x: x['retweets'], reverse=False)
+		count = 1	
+		iterations = 1
+		last_score = 0
+		for tweet in tweets:
+			if iterations == 1:
+				iterations = iterations + 1
+				last_score = tweet['retweets']
+				tweet['virality_rank'] = count
+			elif tweet['retweets'] == last_score:
+				tweet['virality_rank'] = count
+			else:
+				count = count + 1
+				tweet['virality_rank'] = count
+				last_score = tweet['retweets']
+			#print "Rank: " + str(tweet['virality_rank']) + ", Retweets: " + str(tweet['retweets'])
 		
-		for score in new_scores:
-			id = score['id']
-			new_score = score['score']
-			query = ("UPDATE " + team_name + "_tweets SET score=" + str(new_score) + " where id=" + id + ";")
+		virality_ranks = count
+		
+		
+		#Compute time ranks
+		tweets.sort(key=lambda x: x['date_tweeted'], reverse=False)
+		count = 1
+		for tweet in tweets:
+			tweet['time_rank'] = count
+			#print "Rank: " + str(tweet['time_rank']) + ", Time: " + str(tweet['date_tweeted'])
+			count = count + 1
+		
+		time_ranks = count - 1
+	
+		#Compute relevance ranks
+		tweets.sort(key=lambda x: x['distance'], reverse=True)
+		count = 1	
+		iterations = 1
+		last_score = 0
+		for tweet in tweets:
+			if iterations == 1:
+				iterations = iterations + 1
+				last_score = tweet['distance']
+				tweet['relevance_rank'] = count
+			elif tweet['distance'] == last_score:
+				tweet['relevance_rank'] = count
+			else:
+				count = count + 1
+				tweet['relevance_rank'] = count
+				last_score = tweet['distance']
+					
+		relevance_ranks = count
+		
+		#Normalize to 1-1000 range	
+		virality_multiplier = float(1000/float(virality_ranks))
+		time_multiplier = float(1000/float(time_ranks))
+		relevance_multiplier = float(1000/float(relevance_ranks))
+	
+		#Compute scores from normalized rankings
+		for tweet in tweets:
+			tweet['virality_rank'] = float(tweet['virality_rank'] * virality_multiplier)
+			tweet['time_rank'] = float(tweet['time_rank'] * time_multiplier)
+			tweet['relevance_rank'] = float(tweet['relevance_rank'] * relevance_multiplier)
+		
+			tweet['score'] = tweet['virality_rank'] + tweet['time_rank'] + tweet['relevance_rank']	
+		
+			query = ("UPDATE " + team_name + "_tweets SET score=" + str(tweet_score) + ", virality_score=" + str(tweet['virality_score']) + ", time_score=" + str(tweet['time_rank']) + ", relevance_rank=" + str(tweet['relevance_rank']) + " where id=" + tweet['id'] + ";")
 			cursor.execute(query)
+			
+			
 	cnx.commit()
 	cnx.close()
 	logfile = open("/var/www/SocialSensingProject/log.txt", 'a')

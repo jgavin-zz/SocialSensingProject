@@ -80,7 +80,10 @@ createTableQuery = ('''CREATE TABLE bulls_tweets (
 						retweets INT,
 						likes INT,
 						username VARCHAR(100),
-                                                score DOUBLE)'''
+                                                score DOUBLE,
+												virality_rank DOUBLE,
+												time_rank DOUBLE,
+												relevance_rank DOUBLE)'''
                     )
 cursor.execute(createTableQuery)
 
@@ -94,7 +97,10 @@ createTableQuery = ('''CREATE TABLE celtics_tweets (
                                                 retweets INT,
                                                 likes INT,
                                                 username VARCHAR(100),
-                                                score DOUBLE)'''
+                                                score DOUBLE,
+												virality_rank DOUBLE,
+												time_rank DOUBLE,
+												relevance_rank DOUBLE)'''
                     )
 cursor.execute(createTableQuery)
 
@@ -108,7 +114,10 @@ createTableQuery = ('''CREATE TABLE lakers_tweets (
                                                 retweets INT,
                                                 likes INT,
                                                 username VARCHAR(100),
-                                                score DOUBLE)'''
+                                                score DOUBLE,
+												virality_rank DOUBLE,
+												time_rank DOUBLE,
+												relevance_rank DOUBLE)'''
                     )
 cursor.execute(createTableQuery)
 
@@ -122,7 +131,10 @@ createTableQuery = ('''CREATE TABLE knicks_tweets (
                                                 retweets INT,
                                                 likes INT,
                                                 username VARCHAR(100),
-                                                score DOUBLE)'''
+                                                score DOUBLE,
+												virality_rank DOUBLE,
+												time_rank DOUBLE,
+												relevance_rank DOUBLE)'''
                     )
 cursor.execute(createTableQuery)
 
@@ -136,7 +148,10 @@ createTableQuery = ('''CREATE TABLE warriors_tweets (
                                                 retweets INT,
                                                 likes INT,
                                                 username VARCHAR(100),
-						score DOUBLE)'''
+												score DOUBLE,
+												virality_rank DOUBLE,
+												time_rank DOUBLE,
+												relevance_rank DOUBLE)'''
                     )
 cursor.execute(createTableQuery)
 
