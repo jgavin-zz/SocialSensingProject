@@ -107,4 +107,4 @@ def post_customize():
 	
 	
 	
-	return "virality: " + str(virality) + ", time: " + str(time) + ", relevance: " + str(relevance)
+	return render_template('message.html', message = "Preferences Updated")
