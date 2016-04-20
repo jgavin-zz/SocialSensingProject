@@ -97,7 +97,7 @@ def logout():
 def customize():
 	if 'key' in session:
 		virality, time, relevance = get_preferences(session['key'])
-		return render_template('custom.html')
+		return render_template('custom.html', virality = virality, time = time, relevance = relevance)
 	else:
 		return redirect(url_for('login'))
 	

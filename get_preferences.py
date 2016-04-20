@@ -16,5 +16,4 @@ def get_preferences(email):
 		v = str(virality)
 		t = str(time)
 		r = str(relevance)
-	print v, t, r
 	return v, t, r
