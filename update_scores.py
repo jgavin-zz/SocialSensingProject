@@ -85,7 +85,7 @@ if __name__ == '__main__':
 		
 			tweet['score'] = tweet['virality_rank'] + tweet['time_rank'] + tweet['relevance_rank']	
 		
-			query = ("UPDATE " + team_name + "_tweets SET score=" + str(tweet['score']) + ", virality_rank=" + str(tweet['virality_rank']) + ", time_score=" + str(tweet['time_rank']) + ", relevance_rank=" + str(tweet['relevance_rank']) + " where id=" + tweet['id'] + ";")
+			query = ("UPDATE " + team_name + "_tweets SET score=" + str(tweet['score']) + ", virality_rank=" + str(tweet['virality_rank']) + ", time_rank=" + str(tweet['time_rank']) + ", relevance_rank=" + str(tweet['relevance_rank']) + " where id=" + tweet['id'] + ";")
 			cursor.execute(query)
 			
 			
