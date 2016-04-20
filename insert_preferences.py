@@ -7,7 +7,7 @@ def insert_preferences(email, virality, time, relevance):
                               database='socialsensing',
                               charset='utf8',
                               use_unicode=True)
-	cursor = cnx.cursor()
+	cursor = cnx.cursor(buffered=True)
 	
 	#Check if user exists
 	query = ('select username from users;')
