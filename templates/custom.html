@@ -4,7 +4,7 @@
   		<title> Customize Your Subscription </title>
   		<link rel="stylesheet" href="/static/slider.css">
   		<link rel="icon" href= "/static/icon.png">
-	  	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+	  	<script type="text/javascript">
 		    function updateTextInput1(val1) {
 				document.getElementById('textInput1').value=val1;
 				if (val1 == 0) {
@@ -118,27 +118,10 @@
 					document.getElementById("demo3").innerHTML = str.bold() + str2 + str3.bold() + str4;
 				}
 		    }
-		    $('document').ready(function(){
-		    	document.getElementById("virality").style.visibility = "hidden";
-		    	document.getElementById("time").style.visibility = "hidden";
-		    	document.getElementById("relevance").style.visibility = "hidden";
-		    	
-		    	var virality = document.getElementById("virality").text;
-		    	var time = document.getElementById("time").text;
-		    	var relevance = document.getElementById("relevance").text;
-		    	
-		    	alert(relevance);
-		    	
-		    	    
-		    });
 		</script>
 	</head>
 
 	<body background = "/static/background.jpg"> 
-
-		<div id = "virality"> {{ virality }} </div>
-		<div id = "time"> {{ time }} </div>
-		<div id = "relevance"> {{ relevance }} </div>
 		<div id = "horizon">
     		<div id="content">			
 				<form action="/post_customize" method = "POST" autocomplete = "on" >
@@ -154,20 +137,20 @@
 
 					<hr>
 
-				    <input value = "0" type="range" name="viralityRangeInput" min="0" max="3" step = "1" onchange="updateTextInput1(this.value);">       
+				    <input value = "{{virality}}" type="range" name="viralityRangeInput" min="0" max="3" step = "1" onchange="updateTextInput1(this.value);">       
 					                                                 
-				     <input type="hidden" id="textInput1" value = "0" >
+				     <input type="hidden" id="textInput1" value = "{{virality}}" >
 					<p id = "demo"> <b>Virality:</b> I <b>don't care</b> about viral tweets.</p> </br>
 
-					<input value = "0" type="range" name="timeRangeInput" min="0" max="3" step = "1" onchange="updateTextInput2(this.value);">    
+					<input value = "{{time}}" type="range" name="timeRangeInput" min="0" max="3" step = "1" onchange="updateTextInput2(this.value);">    
 
-					<input type="hidden" id="textInput2" value = "0" >
+					<input type="hidden" id="textInput2" value = "{{time}}" >
 				                                          
 
 					<p id = "demo2"> <b>Time</b>: I <b>don't care</b> when the tweets were tweeted. </p></br>
 
-					<input value = "2" type="range" name="relevanceRangeInput" min="0" max="3" step = "1" onchange="updateTextInput3(this.value); ">                                                         
-					<input type="hidden" id="textInput3" value = "2" >
+					<input value = "{{relevance}}" type="range" name="relevanceRangeInput" min="0" max="3" step = "1" onchange="updateTextInput3(this.value); ">                                                         
+					<input type="hidden" id="textInput3" value = "{{relevance}}" >
 					<p id = "demo3"> <b>Keywords</b>: I <b>don't care</b> if the tweet contains your keywords. </p></br>
 
 					<span>
