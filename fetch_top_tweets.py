@@ -14,7 +14,7 @@ def fetch_top_tweets(team_name, email):
 	
 	tweets = []
 	for (id, distance, retweets, date_tweeted) in cursor:
-		tweet = {'id': id, 'distance', 'retweets': retweets, 'date_tweeted': date_tweeted}
+		tweet = {'id': id, 'distance': distance, 'retweets': retweets, 'date_tweeted': date_tweeted}
 		tweets.append(tweet)
 		
 	sorted_by_virality = tweets.sort(key=lambda x: x['retweets'], reverse=False)
