@@ -94,3 +94,12 @@ def logout():
 @app.route('/customize')
 def customize():
 	return render_template('custom.html')
+	
+	
+@app.route('/post_customize', methods = ['POST'])
+def post_customize():
+	virality = int(request.form.get('viralityRangeInput'))
+	time = int(request.form.get('timeRangeInput'))
+	relevance = int(request.form.get('relevanceRangeInput'))
+	
+	return "virality: " + str(virality) + ", time: " + str(time) + ", relevance: " + str(relevance)
