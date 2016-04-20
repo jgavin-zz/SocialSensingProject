@@ -28,13 +28,13 @@ app.config['TWITTER_ACCESS_TOKEN'] = '635902588-6BuJRUYxXQ63vfmQYcP7auLAjkTgxaCR
 app.config['TWITTER_TOKEN_SECRET'] = 'YsLyHMKLoUl47cCge1sBb7KfjDhg2wBbjWhBWm4VVOXtd'
 
 @app.route('/')
-@app.route('/teams/')
+#@app.route('/teams/')
 def home():
 	
 	if 'key' in session:
 		return render_template('home.html')	
 	else:
-		return redirect(url_for('home'))
+		return redirect(url_for('login'))
 		
     
 @app.route('/teams/<team_name>/')
@@ -43,7 +43,7 @@ def team_name(team_name):
 		tweet_ids = fetch_top_tweets(team_name)
 		return render_template('team_name.html', team_name = team_name, tweet_ids = tweet_ids)
 	else:
-		return redirect(url_for('home'))
+		return redirect(url_for('login'))
 
 @app.route('/get_tweets')
 def get_tweets():
@@ -86,4 +86,4 @@ def login_user():
 @app.route('/logout') 
 def logout():   
 	session.clear()
-	return redirect(url_for('login'))
+	return redirect(url_for('home'))
