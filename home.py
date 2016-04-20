@@ -42,7 +42,7 @@ def home():
 @app.route('/teams/<team_name>/')
 def team_name(team_name):
 	if 'key' in session:
-		tweet_ids = fetch_top_tweets(team_name)
+		tweet_ids = fetch_top_tweets(team_name, session['key'])
 		return render_template('team_name.html', team_name = team_name, tweet_ids = tweet_ids, email = session['key'])
 	else:
 		return redirect(url_for('login'))

@@ -24,24 +24,15 @@ def compute_score(distance, retweets, likes, time_tweeted, username, team_name):
 	
 	now = datetime.datetime.now()
 	
-#	tweet_time = datetime.datetime.strptime(time_tweeted, '%Y-%m-%d %I:%M')
 	tdelta = now - time_tweeted
 	seconds = tdelta.total_seconds()
 	seconds_in_a_day = 86400
 	time_score = float(seconds) / float(seconds_in_a_day)
 
 	score = distance + virality_score + time_score
-
-#	logfile = open("/var/www/SocialSensingProject/score_log.txt", 'a')
-#	logfile.write("Distance: " + str(distance)+ '\n')
-#	logfile.write("Virality score: " + str(virality_score)+ '\n')
-#	logfile.write("Time Score: " + str(time_score)+ '\n')
-#	logfile.write("Total score: " + str(score)+ '\n')
-#	logfile.write("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\n")
-#	logfile.close()
 	
 	cnx.commit()
 	cnx.close()
 
 
-	return score
+	return viratily_score, time_score
