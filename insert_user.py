@@ -17,7 +17,7 @@ def insert_user(email, password):
 	for (username) in cursor:
 		user = str(''.join(username))
 		if user == str(email):
-			return "Duplicate email. Failed to register."
+			return 0
 	
 	
 	query = ("INSERT IGNORE INTO users VALUES ('" + str(email) + "', '" + str(password) + "');")
