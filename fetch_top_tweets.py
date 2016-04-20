@@ -1,5 +1,5 @@
 import mysql.connector
-
+from get_preferences import get_preferences
 
 def fetch_top_tweets(team_name, email):
 	cnx = mysql.connector.connect(user='root', password='bob',
