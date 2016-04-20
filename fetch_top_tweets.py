@@ -18,10 +18,10 @@ def fetch_top_tweets(team_name, email):
 		tweets.append(tweet)
 	
 	#Get user preferences
-	v_preference, t_preference, r_preference = get_preferences(email)
-	v_preference = int(v_preference)
-	t_preference = int(t_preference)
-	r_preference = int(r_preference)
+	v, t, r = get_preferences(email)
+	v_preference = int(v)
+	t_preference = int(t)
+	r_preference = int(r)
 	
 	#Compute scores from normalized rankings and preferences
 	for tweet in tweets:
