@@ -22,7 +22,7 @@ def fetch_top_tweets(team_name, email):
 	for tweet in tweets:
 		tweet['virality_rank'] = count
 		count = count + 1
-		print "Rank: " str(tweet['virality_rank']) + ", Retweets: " + str(tweet['retweets'])
+		print "Rank: " + str(tweet['virality_rank']) + ", Retweets: " + str(tweet['retweets'])
 		
 		
 	virality, time, relevance = get_preferences(email)
