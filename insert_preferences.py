@@ -1,4 +1,5 @@
 import mysql.connector
+from mysql.connector import Error
 
 def insert_preferences(email, virality, time, relevance):
 	cnx = mysql.connector.connect(user='root', password='bob',
@@ -27,7 +28,7 @@ def insert_preferences(email, virality, time, relevance):
 			cursor.execute(query)
 			cnx.commit()
 			cnx.close()	
-			return '1'	
+			return query	
 		except Error as e:		
 			return e
 			
