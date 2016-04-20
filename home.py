@@ -106,6 +106,7 @@ def post_customize():
 	time = int(request.form.get('timeRangeInput'))
 	relevance = int(request.form.get('relevanceRangeInput'))
 	
-	return insert_preferences(session['key'], virality, time, relevance)
-	
-	#return render_template('message.html', message = "Preferences Updated")
+	if insert_preferences(session['key'], virality, time, relevance):
+		return render_template('message.html', message = "Preferences Updated")
+	else:
+		return render_template('message.html', message = "Preferences Update Failed")
