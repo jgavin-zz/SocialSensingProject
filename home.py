@@ -106,6 +106,6 @@ def post_customize():
 	time = int(request.form.get('timeRangeInput'))
 	relevance = int(request.form.get('relevanceRangeInput'))
 	
-	insert_preferences(session['key'], virality, time, relevance)
+	return insert_preferences(session['key'], virality, time, relevance)
 	
-	return render_template('message.html', message = "Preferences Updated")
+	#return render_template('message.html', message = "Preferences Updated")
