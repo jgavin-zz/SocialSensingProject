@@ -38,10 +38,10 @@ def fetch_top_tweets(team_name, email):
 		
 		
 	#Compute time ranks
-	tweets.sort(key=lambda x: x['time'], reverse=False)
+	tweets.sort(key=lambda x: x['date_tweeted'], reverse=False)
 	count = 1
 	for tweet in tweets:
-		print "Rank: " + str(count) + ", Time: " + str(tweet['time'])
+		print "Rank: " + str(count) + ", Time: " + str(tweet['date_tweeted'])
 		count = count + 1
 		
 	virality, time, relevance = get_preferences(email)
