@@ -69,15 +69,21 @@ def fetch_top_tweets(team_name, email):
 		
 	relevance_ranks = count
 	
-	print "Virality_ranks: " + str(virality_ranks) + " Time_ranks: " + str(time_ranks) + " Relevance_ranks: " + str(relevance_ranks)
+	#print "Virality_ranks: " + str(virality_ranks) + " Time_ranks: " + str(time_ranks) + " Relevance_ranks: " + str(relevance_ranks)
 		
 	virality_multiplier = float(1000/float(virality_ranks))
 	time_multiplier = float(1000/float(time_ranks))
 	relevance_multiplier = float(1000/float(relevance_ranks))
 	
-	print "Virality_multiplier: " + str(virality_multiplier) + " Time_multiplier: " + str(time_multiplier) + " Relevance_multiplier: " + str(relevance_multiplier)
+	#print "Virality_multiplier: " + str(virality_multiplier) + " Time_multiplier: " + str(time_multiplier) + " Relevance_multiplier: " + str(relevance_multiplier)
 
-	
+	for tweet in tweets:
+		tweet['virality_rank'] = float(tweet['virality_rank'] * virality_multiplier)
+		print tweet['virality_rank']
+		tweet['time_rank'] = float(tweet['time_rank'] * time_multiplier)
+		print tweet['time_rank']
+		tweet['relevance_rank'] = float(tweet['relevance_rank'] * relevance_multiplier)
+		print tweet['relevance_rank']
 	
 	virality, time, relevance = get_preferences(email)
 		
