@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  	<head>
+  		<title> Customize Your Subscription </title>
+  		<link rel="stylesheet" href="/static/slider.css">
+  		<link rel="icon" href= "/static/icon.png">
+	  	<script type="text/javascript">
+		    function updateTextInput1(val1) {
+				document.getElementById('textInput1').value=val1;
+				if (val1 == 0) {
+
+					var str = "Virality: ";
+					var str2 = "I "
+					var str3 = "don't care " 
+					var str4 = "about the number of retweets."
+
+					document.getElementById("demo").innerHTML = str.bold() + str2 + str3.bold() + str4;
+					
+				}else if (val1 == 1) {
+
+					var str = "Virality: ";
+					var str2 = "The number of retweets is "
+					var str3 = "not very important "
+					var str4 = "to me."
+
+					document.getElementById("demo").innerHTML = str.bold() + str2 + str3.bold() + str4;
+
+				} else if (val1 == 2) {
+
+					var str = "Virality: ";
+					var str2 = "The number of retweets is "
+					var str3 = "important "
+					var str4 = "to me."
+					
+					document.getElementById("demo").innerHTML = str.bold() + str2 + str3.bold() + str4;
+				} else if (val1 == 3) {
+
+					var str = "Virality: ";
+					var str2 = "The number of retweets is "
+					var str3 = "very important "
+					var str4 = "to me."
+					
+					document.getElementById("demo").innerHTML = str.bold() + str2 + str3.bold() + str4;
+				} 
+		    }
+		
+		    function updateTextInput2(val2) {
+		    	document.getElementById('textInput2').value=val2;
+		    	if (val2 == 0) {
+
+		    		var str = "Time: ";
+					var str2 = "I "
+					var str3 = "don't care " 
+					var str4 = "when the tweets were tweeted."
+
+					document.getElementById("demo2").innerHTML = str.bold() + str2 + str3.bold() + str4;
+
+				}else if (val2 == 1) {
+
+					var str = "Time: ";
+					var str2 = "The recency of the tweet is "
+					var str3 = "not very important " 
+					var str4 = "to me."
+
+					document.getElementById("demo2").innerHTML = str.bold() + str2 + str3.bold() + str4;
+				} else if (val2 == 2) {
+					var str = "Time: ";
+					var str2 = "The recency of the tweet is "
+					var str3 = "important " 
+					var str4 = "to me."
+
+					document.getElementById("demo2").innerHTML = str.bold() + str2 + str3.bold() + str4;
+
+				} else if (val2 == 3) {
+					var str = "Time: ";
+					var str2 = "The recency of the tweet is "
+					var str3 = "very important " 
+					var str4 = "to me."
+
+					document.getElementById("demo2").innerHTML = str.bold() + str2 + str3.bold() + str4;
+				} 
+		    }
+		
+		    function updateTextInput3(val3) {
+				document.getElementById('textInput3').value=val3;
+				if (val3 == 0) {
+
+					var str = "Keywords: ";
+					var str2 = "I "
+					var str3 = "don't care " 
+					var str4 = "if the tweet contains your keywords."
+
+					document.getElementById("demo3").innerHTML = str.bold() + str2 + str3.bold() + str4;
+
+				}else if (val3 == 1) {
+
+					var str = "Keywords: ";
+					var str2 = "It's "
+					var str3 = "not that important " 
+					var str4 = "if the tweet contains your keywords."
+
+					document.getElementById("demo3").innerHTML = str.bold() + str2 + str3.bold() + str4;
+
+				} else if (val3 == 2) {
+
+					var str = "Keywords: ";
+					var str2 = "It's "
+					var str3 = "important " 
+					var str4 = "that the tweet contains your keywords."
+
+					document.getElementById("demo3").innerHTML = str.bold() + str2 + str3.bold() + str4;
+				} else if (val3 == 3) {
+					var str = "Keywords: ";
+					var str2 = "It's "
+					var str3 = " very important " 
+					var str4 = "that the tweet contains your keywords."
+
+					document.getElementById("demo3").innerHTML = str.bold() + str2 + str3.bold() + str4;
+				}
+		    }
+		</script>
+	</head>
+
+	<body background = "/static/background.jpg"> 
+
+		<div id = "horizon">
+    		<div id="content">			
+				<form action="/" method = "POST" autocomplete = "on" >
+					<span> 
+						Customize 
+						<span class = "headline">
+							<a href="/login">
+								Box Score Chatter
+							</a>
+						</span> 
+						 Today!
+					</span>
+
+					<hr>
+
+				    <input value = "0" type="range" min="0" max="3" step = "1" onchange="updateTextInput1(this.value);">       
+					                                                 
+				     <input type="hidden" id="textInput1" value = "0" >
+					<p id = "demo"> <b>Virality:</b> I <b>don't care</b> about viral tweets.</p> </br>
+
+					<input value = "0" type="range" name="rangeInput" min="0" max="3" step = "1" onchange="updateTextInput2(this.value);">    
+
+					<input type="hidden" id="textInput2" value = "0" >
+				                                          
+
+					<p id = "demo2"> <b>Time</b>: I <b>don't care</b> when the tweets were tweeted. </p></br>
+
+					<input value = "0" type="range" name="rangeInput" min="0" max="3" step = "1" onchange="updateTextInput3(this.value); ">                                                         
+					<input type="hidden" id="textInput3" value = "0" >
+					<p id = "demo3"> <b>Keywords</b>: I <b>don't care</b> if the tweet contains your keywords. </p></br>
+
+					<span>
+						<input type = "submit" value = "Confirm" class="button" class = "text_box"></input>
+						<input type = "submit" value = "Go Back" class="button" class = "text_box"></input>
+						<hr>
+					</span> 
+
+					<span class = "bodytext footer" >
+						Copyright &#169; 2016 <a href= "https://www.linkedin.com/in/jake-gavin-46786672" class = "bio"> Jacob Gavin</a> and <a href= "https://www.linkedin.com/in/ryantick" class = "bio"> Ryan Tick </a>
+					</span>
+
+
+
+				</form>
+
+				
+			</div>
+		</div>
+
+		
+
+  	</body>
+
+</html>

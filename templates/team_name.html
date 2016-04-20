@@ -1,12 +1,71 @@
 <!doctype html>
 <title>Box Score Chatter</title>
 <head>
-	<link rel="stylesheet" type="text/css" href="/static/team_name.css">
+	<link rel="stylesheet" type="text/css" href="/static/home.css">
+	<link href='https://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
+
 	<link rel="icon" href= "/static/icon.png">
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script src="/static/team_name.js"></script>
 </head>
 <body background = "/static/background.jpg">
+
+	<div class = "header">
+        <img src = "/static/logo.png"></img>
+    </div>
+        
+	<div class="dropdown">
+            <button class="dropbtn">Welcome First Last</button>
+            <div class="dropdown-content">
+                <a href="#">Customize</a>
+                <a href="#">Logout</a>
+            </div>
+        </div>
+
+        <div>
+            <ul id="hexGrid" >
+
+                <li class="hex">
+                    <a class="hexIn" href="/teams/Bulls/">
+                        <img src="/static/bulls.jpg">
+    			        <h1>Chicago Bulls</h1>
+    			        <p>Click here to view the most relavent tweets about the Chicago Bulls.</p>
+                    </a>
+                </li>
+                <li class="hex">
+                    <a class="hexIn" href="teams/Celtics/">
+                        <img src="/static/celtics.jpg">
+    			        <h1>Boston Celtics</h1>
+    			        <p>Click here to view the most relavent tweets about the Boston Celtics.</p>
+                    </a>
+                </li>
+                <li class="hex">
+                    <a class="hexIn" href="teams/Lakers/">
+                        <img src="/static/lakers.jpg">
+    			        <h1>Los Angeles Lakers</h1>
+    			        <p>Click here to view the most relavent tweets about the LA Lakers.</p>
+                    </a>
+                </li>
+                <li class="hex">
+                    <a class="hexIn" href="teams/Knicks/">
+                        <img src="/static/knicks.jpg">
+    			        <h1>New York Knicks</h1>
+    			        <p>Click here to view the most relavent tweets about the NY Knicks.</p>
+                    </a>
+                </li>
+                <li class="hex">
+                    <a class="hexIn" href="teams/Warriors/">
+                        <img src="/static/warriors.jpg">
+    		        	<h1>Golden State Warriors</h1>
+    		       		<p>Click here to view the most relavent tweets about the Golden State Warriors.</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+
+
 
 	<div class = "tweets_list" align = "center">
 		{% if team_name %}
@@ -19,15 +78,17 @@
 		{% endif %}
 	</div>
 
-	<footer class="footer" style = "color: #D3D3D3;" > 
 
 
+
+	<footer style = "text-align: center; color: #D3D3D3;" class="footer" > 
+			</br>
             Copyright &#169; 2016 <a style = "color: #D3D3D3; text-decoration: none;" href= "https://www.linkedin.com/in/jake-gavin-46786672" class = "bio"> Jacob Gavin</a> and <a style = "color: #D3D3D3; text-decoration: none;"href= "https://www.linkedin.com/in/ryantick" > Ryan Tick </a><br>
 
         	CSS taken from <a style = "color: #D3D3D3; text-decoration: none;"target="_blank" href="https://github.com/web-tiki/responsive-grid-of-hexagons" >web-tiki</a><br>
 
             Drop Down taken from <a style = "color: #D3D3D3; text-decoration: none;"target="_blank" href="http://www.w3schools.com/css/css_dropdowns.asp" >W3-School</a>
-            
+            </p>
 
             
         </footer>
