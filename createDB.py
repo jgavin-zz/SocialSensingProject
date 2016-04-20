@@ -31,31 +31,21 @@ cursor.execute(useDB)
 #Bulls
 dropTableQuery = ("DROP TABLE IF EXISTS bulls_tweets")
 cursor.execute(dropTableQuery)
-dropTableQuery = ("DROP TABLE IF EXISTS bulls_top")
-cursor.execute(dropTableQuery)
 
 #Celtics
 dropTableQuery = ("DROP TABLE IF EXISTS celtics_tweets")
-cursor.execute(dropTableQuery)
-dropTableQuery = ("DROP TABLE IF EXISTS celtics_top")
 cursor.execute(dropTableQuery)
 
 #Lakers
 dropTableQuery = ("DROP TABLE IF EXISTS lakers_tweets")
 cursor.execute(dropTableQuery)
-dropTableQuery = ("DROP TABLE IF EXISTS lakers_top")
-cursor.execute(dropTableQuery)
 
 #Knicks
 dropTableQuery = ("DROP TABLE IF EXISTS knicks_tweets")
 cursor.execute(dropTableQuery)
-dropTableQuery = ("DROP TABLE IF EXISTS knicks_top")
-cursor.execute(dropTableQuery)
 
 #Warriors
 dropTableQuery = ("DROP TABLE IF EXISTS warriors_tweets")
-cursor.execute(dropTableQuery)
-dropTableQuery = ("DROP TABLE IF EXISTS warriors_top")
 cursor.execute(dropTableQuery)
 
 #Preferences
@@ -78,7 +68,6 @@ createTableQuery = ('''CREATE TABLE bulls_tweets (
 						date_inserted timestamp,
 						date_tweeted timestamp,
 						retweets INT,
-						likes INT,
 						username VARCHAR(100),
                                                 score DOUBLE,
 												virality_rank DOUBLE,
@@ -95,7 +84,6 @@ createTableQuery = ('''CREATE TABLE celtics_tweets (
                                                 date_inserted timestamp,
                                                 date_tweeted timestamp,
                                                 retweets INT,
-                                                likes INT,
                                                 username VARCHAR(100),
                                                 score DOUBLE,
 												virality_rank DOUBLE,
@@ -112,7 +100,6 @@ createTableQuery = ('''CREATE TABLE lakers_tweets (
                                                 date_inserted timestamp,
                                                 date_tweeted timestamp,
                                                 retweets INT,
-                                                likes INT,
                                                 username VARCHAR(100),
                                                 score DOUBLE,
 												virality_rank DOUBLE,
@@ -129,7 +116,6 @@ createTableQuery = ('''CREATE TABLE knicks_tweets (
                                                	date_inserted timestamp,
                                                 date_tweeted timestamp,
                                                 retweets INT,
-                                                likes INT,
                                                 username VARCHAR(100),
                                                 score DOUBLE,
 												virality_rank DOUBLE,
@@ -146,47 +132,11 @@ createTableQuery = ('''CREATE TABLE warriors_tweets (
                                                 date_inserted timestamp,
                                                 date_tweeted timestamp,
                                                 retweets INT,
-                                                likes INT,
                                                 username VARCHAR(100),
 												score DOUBLE,
 												virality_rank DOUBLE,
 												time_rank DOUBLE,
 												relevance_rank DOUBLE)'''
-                    )
-cursor.execute(createTableQuery)
-
-#bulls_top
-createTableQuery = ('''CREATE TABLE bulls_top (
-                                                id VARCHAR(20) NOT NULL
-                                              )'''
-                    )
-cursor.execute(createTableQuery)
-
-#celtics_top
-createTableQuery = ('''CREATE TABLE celtics_top (
-                                                id VARCHAR(20) NOT NULL
-                                              )'''
-                    )
-cursor.execute(createTableQuery)
-
-#lakers_top
-createTableQuery = ('''CREATE TABLE lakers_top (
-                                                id VARCHAR(20) NOT NULL
-                                              )'''
-                    )
-cursor.execute(createTableQuery)
-
-#knicks_top
-createTableQuery = ('''CREATE TABLE knicks_top (
-                                                id VARCHAR(20) NOT NULL
-                                              )'''
-                    )
-cursor.execute(createTableQuery)
-
-#warriors_top
-createTableQuery = ('''CREATE TABLE warriors_top (
-                                                id VARCHAR(20) NOT NULL
-                                              )'''
                     )
 cursor.execute(createTableQuery)
 

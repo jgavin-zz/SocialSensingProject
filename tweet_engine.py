@@ -88,10 +88,14 @@ class TweetListener(StreamListener):
 				team_name = 'celtics'
 			else:
 				team_name = 'warriors'
-			score = str(compute_score(min_distance, retweets, likes, time_tweeted, username, team_name))
 
-
-			query = ("INSERT IGNORE INTO " + team_name + "_tweets VALUES (" + str(status.id) + ',"' + status.text + '",' + str(min_distance) + ",CURRENT_TIMESTAMP, STR_TO_DATE('" + tweet_time + "', '%Y-%m-%d %h:%i'" + "), " + retweets + ", " + likes + ", '" + username + "', " + score + " );" + "\n")
+			virality_rank = '1'
+			time_rank = '1000'
+			relevance_rank = '1'
+			score = '1002'
+			
+			query = ("INSERT IGNORE INTO " + team_name + "_tweets VALUES (" + str(status.id) + ',"' + status.text + '",' + str(min_distance) + ",CURRENT_TIMESTAMP, STR_TO_DATE('" + tweet_time + "', '%Y-%m-%d %h:%i'" + "), " + retweets + ", " + username + "', " + score + ", " + virality_rank + ", " + time_rank + ", " + relevance_rank + " );" + "\n")
+			print query
 			logfile = open("/var/www/SocialSensingProject/tweets.txt", 'a')
 			logfile.write(query)
 			logfile.close()
