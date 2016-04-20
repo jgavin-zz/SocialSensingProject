@@ -69,8 +69,16 @@ def fetch_top_tweets(team_name, email):
 		
 	relevance_ranks = count
 	
-	print "Virality_ranks: " + str(virality_ranks) + "Time_ranks: " + str(time_ranks) + "Relevance_ranks: " + str(relevance_ranks)
+	print "Virality_ranks: " + str(virality_ranks) + " Time_ranks: " + str(time_ranks) + " Relevance_ranks: " + str(relevance_ranks)
 		
+	virality_multiplier = float(1000/float(virality_ranks))
+	time_multiplier = float(1000/float(time_ranks))
+	relevance_multiplier = float(1000/float(relevance_ranks))
+	
+	print "Virality_multiplier: " + str(virality_multiplier) + " Time_multiplier: " + str(time_multiplier) + " Relevance_multiplier: " + str(relevance_multiplier)
+
+	
+	
 	virality, time, relevance = get_preferences(email)
 		
 	cnx.commit()
