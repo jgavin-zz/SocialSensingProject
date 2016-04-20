@@ -87,3 +87,7 @@ def login_user():
 def logout():   
 	session.clear()
 	return redirect(url_for('home'))
+	
+@app.route('/customize')
+def customize():
+	return render_template('custom.html')
