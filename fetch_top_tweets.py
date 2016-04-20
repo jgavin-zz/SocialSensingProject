@@ -41,8 +41,27 @@ def fetch_top_tweets(team_name, email):
 	tweets.sort(key=lambda x: x['date_tweeted'], reverse=False)
 	count = 1
 	for tweet in tweets:
-		print "Rank: " + str(count) + ", Time: " + str(tweet['date_tweeted'])
+		tweet['time_rank'] = count
+		print "Rank: " + str(tweet['time_rank']) + ", Time: " + str(tweet['date_tweeted'])
 		count = count + 1
+		
+	#Compute relevance ranks
+	tweets.sort(key=lambda x: x['distance'], reverse=False)
+	count = 1	
+	iterations = 1
+	last_score = 0
+	for tweet in tweets:
+		if iterations == 1:
+			iterations = iterations + 1
+			last_score = tweet['distance']
+			tweet['relevance_rank'] = count
+		elif tweet['distance'] == last_score:
+			tweet['relevance_rank'] = count
+		else:
+			count = count + 1
+			tweet['relevance_rank'] = count
+			last_score = tweet['distance']
+		print "Rank: " + str(tweet['distance_rank']) + ", Distance: " + str(tweet['distance'])
 		
 	virality, time, relevance = get_preferences(email)
 		
