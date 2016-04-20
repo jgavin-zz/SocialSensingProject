@@ -93,8 +93,10 @@ def fetch_top_tweets(team_name, email):
 	#Sort by score
 	ids = []
 	tweets.sort(key=lambda x: x['score'], reverse=True)
+	
+	print "Virality preference: " + str(v_preference) + "Time preference: " + str(t_preference) + "Relevance preference: " + str(r_preference)
 	for tweet in tweets:
-		print tweet['score']
+		print "Score: " + tweet['score'] + "	v_rank: " + str(tweet['virality_rank']) + ", t_rank: " + str(tweet['time_rank']) + ", r_rank: " + str(tweet['relevance_rank'])
 		
 	cnx.commit()
 	cnx.close()
