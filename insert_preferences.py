@@ -22,14 +22,14 @@ def insert_preferences(email, virality, time, relevance):
 		
 	if exists == 1:
 		query = ("UPDATE preferences SET virality=" + str(virality) + ", time =" +  str(time) +  ", relevance =" + str(relevance) + " where username='" + email + "';")
-		return query
+		#return query
 		try:
 			cursor.execute(query)
 			cnx.commit()
 			cnx.close()	
 			return '1'	
 		except Error as e:		
-			return '0'
+			return e
 			
 	else:
 		return '0'
