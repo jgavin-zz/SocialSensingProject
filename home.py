@@ -32,7 +32,7 @@ app.config['TWITTER_TOKEN_SECRET'] = 'YsLyHMKLoUl47cCge1sBb7KfjDhg2wBbjWhBWm4VVO
 def home():
 	
 	if 'key' in session:
-		return render_template('home.html')	
+		return render_template('home.html', email = session['key'])	
 	else:
 		return redirect(url_for('login'))
 		
@@ -41,7 +41,7 @@ def home():
 def team_name(team_name):
 	if 'key' in session:
 		tweet_ids = fetch_top_tweets(team_name)
-		return render_template('team_name.html', team_name = team_name, tweet_ids = tweet_ids)
+		return render_template('team_name.html', team_name = team_name, tweet_ids = tweet_ids, email = session['key'])
 	else:
 		return redirect(url_for('login'))
 
