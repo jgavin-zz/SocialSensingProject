@@ -61,7 +61,7 @@ def fetch_top_tweets(team_name, email):
 			count = count + 1
 			tweet['relevance_rank'] = count
 			last_score = tweet['distance']
-		print "Rank: " + str(tweet['distance_rank']) + ", Distance: " + str(tweet['distance'])
+		print "Rank: " + str(tweet['relevance_rank']) + ", Distance: " + str(tweet['distance'])
 		
 	virality, time, relevance = get_preferences(email)
 		
