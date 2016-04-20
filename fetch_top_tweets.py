@@ -46,7 +46,7 @@ def fetch_top_tweets(team_name, email):
 		count = count + 1
 		
 	#Compute relevance ranks
-	tweets.sort(key=lambda x: x['distance'], reverse=False)
+	tweets.sort(key=lambda x: x['distance'], reverse=True)
 	count = 1	
 	iterations = 1
 	last_score = 0
